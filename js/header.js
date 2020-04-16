@@ -39,42 +39,39 @@ renderTrending(trendingItems);
 
 /* scroll efect*/
 window.onscroll = () => {
-        if (document.documentElement.scrollTop > scrollTop) {
-            search_input.placeholder = "Tìm kiếm";
-            top_bar.classList.add("top_bar_scroll");
-            menubar_parent.classList.add('menubar_scroll');
-            input_box.classList.add('input_scroll');
-            if (shrink_items) {
-                shrink_items.forEach((item, key) => {
-                    if (key === 0) {
-                        item.style.transform = 'translateX(100%) scale(0)';
-                        item.style.zIndex = -1;
-                    } else {
-                        item.style.transform = 'translateX(-100%) scale(0)';
-                        item.style.zIndex = -1;
-                        setTimeout(() => {
-                            item.style.display = 'none';
-                        }, 100)
-                    }
-                });
-            }
-            header.classList.add('header_scroll');
-            user_profile.classList.add('scroll');
-            scrollTop = document.documentElement.scrollTop;
-        } else {
-            search_input.placeholder = "Nhập tên bài hát, ca sĩ hoặc mv…";
-            top_bar.classList.remove("top_bar_scroll");
-            menubar_parent.classList.remove('menubar_scroll');
-            input_box.classList.remove('input_scroll');
-            if (shrink_items) {
-                shrink_items.forEach(item => {
-                    item.style.transform = 'translateX(0) scale(1)';
-                    item.style.display = 'block';
-                });
-            }
-            header.classList.remove('header_scroll');
-            user_profile.classList.remove('scroll');
-            scrollTop = document.documentElement.scrollTop;
+    if (document.documentElement.scrollTop > scrollTop) {
+        search_input.placeholder = "Tìm kiếm";
+        top_bar.classList.add("top_bar_scroll");
+        menubar_parent.classList.add('menubar_scroll');
+        input_box.classList.add('input_scroll');
+        if (shrink_items) {
+            shrink_items.forEach((item, key) => {
+                if (key === 0) {
+                    item.style.transform = 'translateX(100%) scale(0)';
+                } else {
+                    item.style.transform = 'translateX(-100%) scale(0)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 100)
+                }
+            });
         }
+        header.classList.add('header_scroll');
+        user_profile.classList.add('scroll');
+        scrollTop = document.documentElement.scrollTop;
+    } else {
+        search_input.placeholder = "Nhập tên bài hát, ca sĩ hoặc mv…";
+        top_bar.classList.remove("top_bar_scroll");
+        menubar_parent.classList.remove('menubar_scroll');
+        input_box.classList.remove('input_scroll');
+        if (shrink_items) {
+            shrink_items.forEach(item => {
+                item.style.transform = 'translateX(0) scale(1)';
+                item.style.display = 'block';
+            });
+        }
+        header.classList.remove('header_scroll');
+        user_profile.classList.remove('scroll');
+        scrollTop = document.documentElement.scrollTop;
     }
-    //input focus
+}
