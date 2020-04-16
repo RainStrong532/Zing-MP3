@@ -31,7 +31,7 @@ let mvs_items = [
 ]
 let albums_items = mvs_items;
 let singers_items = [
-    ['Quốc gia', 'Việt Nam', 'Âu Mỹ', 'Hàn Quốc', 'Nhật Bản', 'Hoa Ngữ', 'Hòa Tấu']
+    ['Việt Nam', 'Âu Mỹ', 'Hàn Quốc', 'Nhật Bản', 'Hoa Ngữ', 'Hòa Tấu']
 ]
 
 function renderZingchartSub(element, items) {
