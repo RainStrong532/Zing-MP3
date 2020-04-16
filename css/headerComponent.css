@@ -8,7 +8,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     color: #32323d;
-    background-color: #fcfcfc;
+    background-color: #ddd;
     height: 200vh;
 }
 
@@ -16,6 +16,9 @@ header.header {
     position: fixed;
     top: 0;
     width: 100%;
+    height: 120px;
+    background-color: #fcfcfc;
+    transition: all 0.3s;
 }
 
 header.header .top_bar .top_bar_inner .logo {
@@ -31,17 +34,20 @@ header.header .top_bar .top_bar_inner .logo {
 header.header .top_bar {
     display: flex;
     justify-content: space-between;
-    background-color: #fcfcfc;
     height: 72px;
     align-items: center;
     transition: all 0.3s;
 }
 
 header.header .top_bar form {
+    position: relative;
     display: flex;
     align-items: center;
     width: 100%;
     max-width: 540px;
+    left: 0;
+    z-index: 10;
+    transition: all 0.3s;
 }
 
 header.header .top_bar form .input_group {
@@ -52,6 +58,7 @@ header.header .top_bar form .input_group {
     background-color: #fff;
     border-radius: 8px;
     position: relative;
+    transition: all 0.3s;
 }
 
 header.header .top_bar form .input_group .material-icons {
@@ -59,6 +66,7 @@ header.header .top_bar form .input_group .material-icons {
     width: 40px;
     text-align: center;
     cursor: pointer;
+    padding: 0 10px;
 }
 
 header.header .top_bar form .input_group .input_wrapper {
@@ -67,6 +75,7 @@ header.header .top_bar form .input_group .input_wrapper {
     height: 40px;
     display: flex;
     align-items: center;
+    transition: all 0.3s;
 }
 
 header.header .top_bar form .input_group .trending {
@@ -90,6 +99,7 @@ header.header .top_bar form .input_group .trending li {
     position: relative;
     border-radius: 8px;
     cursor: pointer;
+    z-index: 5;
 }
 
 header.header .top_bar form .input_group .trending li:hover {
@@ -139,6 +149,7 @@ header.header .top_bar .user_profile {
 
 header.header .top_bar .user_profile .user_info {
     width: 120px;
+    transition: all 0.3s;
 }
 
 header.header .top_bar .user_profile .user_info a {
@@ -173,6 +184,7 @@ header.header .top_bar .user_profile .avatar img {
 
 header.header .top_bar .user_profile .extention {
     margin-left: 16px;
+    transition: all 0.3s;
 }
 
 header.header .top_bar .user_profile .extention .material-icons {
@@ -186,14 +198,17 @@ header.header .top_bar .menu_bar .menu_bar_inner {
 
 header.header .top_bar .menu_bar {
     position: absolute;
-    top: 100%;
+    top: 72px;
+    transition: all 0.3s;
 }
 
 header.header .top_bar .menu_bar .menu_bar_inner li {
     padding-right: 25px;
-    background-color: #fcfcfc;
-    z-index: 10;
     transition: all 0.3s;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner li:last-child {
+    padding: 15px 0;
 }
 
 header.header .top_bar .menu_bar .menu_bar_inner li .nav_link {
@@ -205,13 +220,15 @@ header.header .top_bar .menu_bar .menu_bar_inner li .nav_link {
     padding: 15px 0;
     font-weight: 600;
     display: block;
-    border-bottom: 2px solid #fcfcfc;
+    border-bottom: 2px solid transparent;
     white-space: nowrap;
 }
 
 header.header .top_bar .menu_bar .menu_bar_inner li .vip_btn {
     display: block;
     background-image: url('../images/VIP-1x.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 50px;
     height: 25px;
     position: relative;
@@ -245,21 +262,30 @@ header.header .top_bar .menu_bar .menu_bar_inner li:hover a.nav_link {
 
 /*scroll*/
 
-
-/* header.header .top_bar_scroll {
+header.header .top_bar_scroll {
     justify-content: space-between;
 }
 
-header.header .top_bar .menu_bar li.shrink:first-child {
-    position: absolute;
-    border: none;
-}
-
-header.header .top_bar .menu_bar .menu_bar_inner .shrink {
-    position: absolute;
-    z-index: 1;
-}
-
 header.header .top_bar .menubar_scroll {
-    position: static;
-} */
+    top: 14px;
+    transform: translateX(24px);
+}
+
+header.header .top_bar form.input_scroll {
+    left: 30%;
+    width: 228px;
+}
+
+header.header .top_bar .user_profile.scroll .user_info {
+    width: 0;
+}
+
+header.header .top_bar .user_profile.scroll .extention {
+    margin: 0;
+}
+
+header.header_scroll {
+    height: 62px;
+    box-shadow: 0 5px 15px 0 rgba(51, 51, 51, .1);
+    background: #f0f0f0;
+}
