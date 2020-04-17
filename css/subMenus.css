@@ -1,0 +1,53 @@
+header.header .top_bar .menu_bar .menu_bar_inner>li:hover div {
+    display: flex;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div {
+    position: absolute;
+    left: 0;
+    display: flex;
+    top: 102%;
+    white-space: nowrap;
+    background-color: #fcfcfc;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    display: none;
+    padding: 10px 0;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div ul {
+    list-style-type: none;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div ul li {
+    display: block;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div ul li:first-child {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div ul li:first-child:hover {
+    background-color: #fcfcfc;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div ul li {
+    padding: 10px 15px;
+    width: 150px;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div ul li a {
+    text-decoration: none;
+    font-size: 0.875rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner>li div ul li:hover {
+    background-color: #efefef;
+}

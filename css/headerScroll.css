@@ -1,0 +1,48 @@
+header.header .top_bar_scroll {
+    transform: translateY(-4px);
+}
+
+header.header .top_bar_scroll .inner_space {
+    display: block;
+}
+
+header.header .top_bar .menubar_scroll {
+    top: 14px;
+    transform: translateX(24px);
+}
+
+header.header .top_bar form.input_scroll {
+    max-width: 228px;
+    left: 0;
+    margin-left: 50%;
+}
+
+header.header .top_bar form.input_scroll:focus-within {
+    position: relative;
+    max-width: 540px;
+    right: 0;
+    margin-left: 0;
+}
+
+header.header .top_bar form.input_scroll:focus-within+.menu_bar {
+    visibility: hidden;
+    transition: none;
+}
+
+header.header .top_bar form.input_scroll:focus-within~div.user_profile .user_info {
+    width: 120px;
+}
+
+header.header .top_bar .user_profile.scroll .user_info {
+    width: 0;
+}
+
+header.header .top_bar .user_profile.scroll .extention {
+    margin: 0;
+}
+
+header.header_scroll {
+    height: 62px;
+    box-shadow: 0 5px 15px 0 rgba(51, 51, 51, .1);
+    background: #f0f0f0d0;
+}
