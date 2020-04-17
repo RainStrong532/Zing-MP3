@@ -22,7 +22,7 @@ header.header .top_bar .menu_bar .menu_bar_inner>li:last-child {
 
 header.header .top_bar .menu_bar .menu_bar_inner>li .nav_link {
     text-decoration: none;
-    color: #32323d;
+    /* color: #32323d; */
     font-family: 'Roboto', sans-serif;
     font-size: 0.875rem;
     text-transform: uppercase;
