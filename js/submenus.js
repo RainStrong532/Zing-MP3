@@ -35,13 +35,13 @@ let singers_items = [
 ]
 
 function renderZingchartSub(element, items) {
-    let table;
-    table = "<div>" + items.map(item => {
+    let html;
+    html = "<div>" + items.map(item => {
         return "<ul>" + item.map(item => {
             return "<li><a href='#'>" + item + "</a></li>"
         }).join('') + "</ul>";
-    }).join('') + "</div>"
-    element.innerHTML += table;
+    }).join('') + "</div>";
+    element.innerHTML += html;
 }
 renderZingchartSub(zing_chart, items_zingChart);
 renderZingchartSub(top_100, top100_items);
