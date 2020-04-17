@@ -7,6 +7,7 @@ header.header .top_bar .menu_bar {
     position: absolute;
     top: 72px;
     transition: all 0.3s;
+    width: 100%;
 }
 
 header.header .top_bar .menu_bar .menu_bar_inner>li {

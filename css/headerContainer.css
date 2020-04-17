@@ -19,4 +19,6 @@ header.header .top_bar {
     align-items: center;
     transition: all 0.3s;
     position: relative;
+    max-width: 1026px;
+    margin: 0 auto;
 }
