@@ -10,14 +10,17 @@
     <link rel="stylesheet" href="../css/reset.css">
 
     <!-- import css header -->
-    <link rel="stylesheet" href="../css/headerContainer.css">
-    <link rel="stylesheet" href="../css/logo.css">
-    <link rel="stylesheet" href="../css/inputSearch.css">
-    <link rel="stylesheet" href="../css/userProfileHeader.css">
-    <link rel="stylesheet" href="../css/dropdownMenu.css">
-    <link rel="stylesheet" href="../css/menubarHeader.css">
-    <link rel="stylesheet" href="../css/subMenus.css">
-    <link rel="stylesheet" href="../css/headerScroll.css">
+    <link rel="stylesheet" href="../css/headerNavbar/headerContainer.css">
+    <link rel="stylesheet" href="../css/headerNavbar/logo.css">
+    <link rel="stylesheet" href="../css/headerNavbar/inputSearch.css">
+    <link rel="stylesheet" href="../css/headerNavbar/userProfileHeader.css">
+    <link rel="stylesheet" href="../css/headerNavbar/dropdownMenu.css">
+    <link rel="stylesheet" href="../css/headerNavbar/menubarHeader.css">
+    <link rel="stylesheet" href="../css/headerNavbar/subMenus.css">
+    <link rel="stylesheet" href="../css/headerNavbar/headerScroll.css">
+
+    <!-- import slider main css -->
+    <link rel="stylesheet" href="../css/sliderMain/sliderMain.css">
 
     <!-- responsive container -->
     <link rel="stylesheet" href="../css/responsiveContainer.css">
@@ -85,12 +88,62 @@
         </div>
     </header>
 
-    <script src="../js/renderMenubar.js"></script>
-    <script src="../js/renderTrendingItems.js"></script>
-    <script src="../js/submenus.js"></script>
-    <script src="../js/dropdownMenu.js"></script>
-    <script src="../js/scrollHeader.js"></script>
-    <script src="../js/inputSearch.js"></script>
+    <div class="inner_space"></div>
+
+    <div class="container container_slider">
+        <div class="slider_main">
+            <div class="slider_container">
+                <div class="slide">
+                    <img src="../images/slide1.jpg" alt="image">
+                </div>
+                <div class="slide">
+                    <img src="../images/slide2.jpg" alt="image">
+                </div>
+                <div class="slide">
+                    <img src="../images/slide3.jpg" alt="image">
+                </div>
+                <div class="slide">
+                    <img src="../images/slide4.jpg" alt="image">
+                </div>
+                <div class="slide">
+                    <img src="../images/slide5.jpg" alt="image">
+                </div>
+                <div class="slide">
+                    <img src="../images/slide1.jpg" alt="image">
+                </div>
+            </div>
+            <div class="slide_wrapper">
+                <ul>
+                    <li>
+                        <img src="../images/photo1.jpg" alt="image">
+                    </li>
+                    <li>
+                        <img src="../images/photo2.jpg" alt="image">
+                    </li>
+                    <li>
+                        <img src="../images/photo3.jpg" alt="image">
+                    </li>
+                    <li>
+                        <img src="../images/photo4.jpg" alt="image">
+                    </li>
+                    <li>
+                        <img src="../images/photo5.jpg" alt="image">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- import header navbar js -->
+    <script src="../js/headerNavbar/renderMenubar.js"></script>
+    <script src="../js/headerNavbar/renderTrendingItems.js"></script>
+    <script src="../js/headerNavbar/submenus.js"></script>
+    <script src="../js/headerNavbar/dropdownMenu.js"></script>
+    <script src="../js/headerNavbar/scrollHeader.js"></script>
+    <script src="../js/headerNavbar/inputSearch.js"></script>
+
+    <!-- import slider main js -->
+    <script src="../js/sliderMain/sliderMain.js"></script>
 </body>
 
 </html>

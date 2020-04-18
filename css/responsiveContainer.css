@@ -7,6 +7,9 @@
     header.header .top_bar .menu_bar .menu_bar_inner>li:nth-child(4) {
         display: none;
     }
+    header.header {
+        padding: 0 18px;
+    }
 }
 
 @media (max-width: 892px) {
