@@ -5,7 +5,7 @@ header.header .top_bar form {
     width: 50%;
     max-width: 540px;
     right: 0;
-    z-index: 10;
+    z-index: 30;
     transition: all 0.3s;
 }
 

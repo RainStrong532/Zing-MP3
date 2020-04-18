@@ -6,12 +6,15 @@ header.header .top_bar .menu_bar .menu_bar_inner>li div {
     position: absolute;
     left: 0;
     display: flex;
-    top: 102%;
     white-space: nowrap;
     background-color: #fcfcfc;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
     display: none;
     padding: 10px 0;
+}
+
+header.header .top_bar .menu_bar .menu_bar_inner li.shrink {
+    z-index: 5;
 }
 
 header.header .top_bar .menu_bar .menu_bar_inner>li div ul {

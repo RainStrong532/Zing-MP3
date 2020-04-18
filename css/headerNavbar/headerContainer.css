@@ -22,4 +22,5 @@ header.header .top_bar {
     position: relative;
     max-width: 1026px;
     margin: 0 auto;
+    z-index: 20;
 }
