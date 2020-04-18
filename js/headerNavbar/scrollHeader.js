@@ -7,7 +7,7 @@ const user_profile = document.querySelector('.user_profile');
 const header = document.querySelector('.header');
 let shrink_items = document.querySelectorAll('header.header .top_bar .menu_bar .menu_bar_inner .shrink');
 window.onscroll = () => {
-    if (document.documentElement.scrollTop > scrollTop) {
+    if (document.documentElement.scrollTop > scrollTop && document.documentElement.scrollTop > 120) {
         search_input.placeholder = "Tìm kiếm";
         top_bar.classList.add("top_bar_scroll");
         menubar_parent.classList.add('menubar_scroll');

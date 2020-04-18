@@ -35,7 +35,7 @@ header.header .top_bar .menu_bar .menu_bar_inner>li .nav_link {
 
 header.header .top_bar .menu_bar .menu_bar_inner>li .vip_btn {
     display: block;
-    background-image: url('../images/VIP-1x.svg');
+    background-image: url('../../images/VIP-1x.svg');
     background-repeat: no-repeat;
     background-size: cover;
     width: 50px;
