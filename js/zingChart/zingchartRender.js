@@ -1,5 +1,8 @@
 const zingchartContainer = document.querySelector('.zingchart_container');
 const zingchart_highchart = document.querySelector('.zingchart_highchart');
+const realTimeFooter = document.querySelector('.realtime_footer');
+let listTimeOdd = document.querySelectorAll('.realtime_footer span:nth-child(odd)');
+let listTimeEven = document.querySelectorAll('.realtime_footer span:nth-child(even)');
 
 const colorPath = ["rgb(74, 144, 226)", "rgb(80, 227, 194)", "rgb(227, 80, 80)"];
 const fillPoint = "rgb(247, 247, 247)";
@@ -64,4 +67,35 @@ function renderChart(top_songs) {
 }
 zingchart_highchart.innerHTML = "<path class='line' d='M " + (20 + 1 + distancePoints / 2) + " 0 L" + (20 + 1 + distancePoints / 2) + " " + chartHeight + "\' stroke='rgb(74, 144, 226)' stroke-width='1' fill='none'/path>";
 
+
+function renderRealtimeFooter() {
+    let html = timeArray.reverse().map((item) => {
+        return (
+            (item > 9) ?
+            '<span>' + item + '</span>' :
+            '<span>0' + item + '</span>'
+        )
+    }).join('');
+    realTimeFooter.innerHTML = html;
+    realTimeFooter.style.padding = '0 ' + 20 + 'px';
+    realTimeFooter.style.width = chartWidth + 'px';
+    listTimeOdd = document.querySelectorAll('.realtime_footer span:nth-child(odd)');
+    listTimeEven = document.querySelectorAll('.realtime_footer span:nth-child(even)');
+    if (now.getHours() % 2 !== 0) {
+        listTimeEven.forEach(item => {
+            item.style.visibility = 'hidden';
+        });
+        listTimeOdd.forEach(item => {
+            item.style.visibility = 'visible';
+        });
+    } else {
+        listTimeEven.forEach(item => {
+            item.style.visibility = 'visible';
+        });
+        listTimeOdd.forEach(item => {
+            item.style.visibility = 'hidden';
+        });
+    }
+}
+renderRealtimeFooter();
 renderChart(top_songs);

@@ -18,7 +18,9 @@ chart_overlay.addEventListener('mousemove', (e) => {
     // horizontal
     let index = parseFloat(((coordX - start) / (distancePoints)).toFixed(2));
     index = Math.round(index);
-    console.log(index);
+
+    let timeHtml = (timeArray[index] > 9 && timeArray[index]) ? timeArray[index] : "0" + timeArray[index]
+    time.innerHTML = timeHtml + ':00';
     if (index < 0 || index > 23) {
         highchart_line.style.visibility = 'hidden';
         time_chart.style.visibility = 'hidden';
@@ -34,7 +36,7 @@ chart_overlay.addEventListener('mousemove', (e) => {
         transX = '2px';
         diamond.style.left = 18 + distancePoints / 2 + 'px';
     } else if (index === 23) {
-        transX = (distancePoints * (index + 0.5) - time_chart.clientWidth / 2) + 'px';
+        transX = (distancePoints * (index + 0.5) - time_chart.clientWidth / 2 + 2) + 'px';
         diamond.style.left = time_chart.clientWidth - (20 + distancePoints / 2) + 'px';
     } else {
         transX = (distancePoints * (index + 0.5) - time_chart.clientWidth / 2 + 19) + 'px';
