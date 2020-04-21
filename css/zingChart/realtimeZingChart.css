@@ -1,0 +1,67 @@
+.realtime_header {
+    background: rgba(141, 141, 141, .5);
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.realtime_header .zing_chart_btn {
+    color: #fcfcfc;
+    font-size: 0.75rem;
+    padding: 0 5px;
+    width: 86px;
+    height: 24px;
+    text-align: center;
+    background: linear-gradient(to right, #4b38d7, #8d4fe2);
+    border-radius: 12px;
+    font-weight: 700;
+    line-height: 1.5rem;
+    cursor: pointer;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.realtime_header .zing_chart_btn:hover {
+    background-image: none;
+    background-color: #fcfcfc;
+    border-color: #fcfcfc;
+    color: #6e55b4;
+}
+
+.realtime_header #time_picker {
+    color: #fcfcfc;
+    font-size: 0.875rem;
+    font-weight: 400;
+    cursor: context-menu;
+    white-space: nowrap;
+}
+
+.realtime_header .listen_all {
+    color: #fcfcfc;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    line-height: 1.5rem;
+    border: 0;
+    padding: 4px 12px;
+    background-color: #65509e;
+    border-radius: 4px;
+    cursor: context-menu;
+    white-space: nowrap;
+}
+
+.realtime_header .listen_all:hover {
+    background-color: #fcfcfc;
+    border-color: #fcfcfc;
+    color: #6e55b4;
+}
+
+.realtime_header .listen_all:hover span {
+    color: #6e55b4;
+}
+
+.realtime_header .listen_all span {
+    color: #fcfcfc;
+    font-size: 1.5rem;
+}

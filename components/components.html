@@ -22,6 +22,10 @@
     <!-- import slider main css -->
     <link rel="stylesheet" href="../css/sliderMain/sliderMain.css">
 
+    <!-- import zingchart css -->
+    <link rel="stylesheet" href="../css/zingChart/realtimeZingChart.css">
+    <link rel="stylesheet" href="../css/zingChart/zingChart.css">
+
     <!-- responsive container -->
     <link rel="stylesheet" href="../css/responsiveContainer.css">
 
@@ -136,6 +140,29 @@
         </div>
     </div>
 
+    <!-- zing chart -->
+    <div class="realtime_header">
+        <div>
+            <a class="zing_chart_btn">
+            #zingchart
+        </a>
+            <span id="time_picker">
+            </span>
+        </div>
+        <a class="listen_all">
+            <span class="material-icons">
+                play_arrow
+            </span> Nghe tất cả
+        </a>
+    </div>
+    <div class="chart_container">
+        <svg class="zingchart_container">
+        </svg>
+        <svg class="zingchart_highchart">
+        </svg>
+        <div class="overlay"></div>
+        <span class="time_chart">Thời gian: <b class="time">19:00</b><span class="diamond"></span></span>
+    </div>
     <!-- import header navbar js -->
     <script src="../js/headerNavbar/renderMenubar.js"></script>
     <script src="../js/headerNavbar/renderTrendingItems.js"></script>
@@ -146,6 +173,12 @@
 
     <!-- import slider main js -->
     <script src="../js/sliderMain/sliderMain.js"></script>
+
+    <!-- import zing chart path -->
+    <script src="../js/zingChart/realtime.js"></script>
+    <script src="../js/zingChart/zingchartRender.js"></script>
+    <script src="../js/zingChart/zingchartMouseEvent.js"></script>
+
 </body>
 
 </html>

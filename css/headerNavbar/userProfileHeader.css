@@ -1,6 +1,7 @@
 header.header .top_bar .user_profile {
     display: flex;
     align-items: center;
+    z-index: 20;
 }
 
 header.header .top_bar .user_profile .user_info {
@@ -41,7 +42,6 @@ header.header .top_bar .user_profile .avatar img {
 header.header .top_bar .user_profile .extention {
     margin-left: 16px;
     transition: all 0.3s;
-    z-index: 20;
 }
 
 header.header .top_bar .user_profile .extention .material-icons {
