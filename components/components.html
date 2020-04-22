@@ -25,6 +25,8 @@
     <!-- import zingchart css -->
     <link rel="stylesheet" href="../css/zingChart/realtimeZingChart.css">
     <link rel="stylesheet" href="../css/zingChart/zingChart.css">
+    <link rel="stylesheet" href="../css/zingChart/chartItem.css">
+    <link rel="stylesheet" href="../css/zingChart/sideChart.css">
 
     <!-- responsive container -->
     <link rel="stylesheet" href="../css/responsiveContainer.css">
@@ -141,44 +143,137 @@
     </div>
 
     <!-- zing chart -->
-    <div class="realtime_header">
-        <div>
-            <a class="zing_chart_btn">
-            #zingchart
-        </a>
-            <span id="time_picker">
-            </span>
-        </div>
-        <a class="listen_all">
-            <span class="material-icons">
-                play_arrow
-            </span> Nghe tất cả
-        </a>
-    </div>
-    <div class="chart_container">
-        <svg class="zingchart_container">
-        </svg>
-        <svg class="zingchart_highchart">
-        </svg>
-        <div class="overlay"></div>
-        <span class="time_chart">Thời gian: <b class="time">19:00</b><span class="diamond"></span></span>
-    </div>
-    <div class="realtime_footer">
-    </div>
-    <div class="chart_realtime_container">
-
-    </div>
-
-    <div class="side_zing_chart">
-        <ul class="chart_list">
-            <li>
-                <div class="chart_item">
-
+    <div class="container all_chart_container">
+        <!-- container -->
+        <div class="chart_realtime_container">
+            <!-- header realtime -->
+            <div class="realtime_header">
+                <div>
+                    <a class="zing_chart_btn">
+                #zingchart
+            </a>
+                    <span id="time_picker">
+                </span>
                 </div>
-            </li>
+                <a class="listen_all">
+                    <span class="material-icons">
+                    play_arrow
+                </span> Nghe tất cả
+                </a>
+            </div>
+            <div class="chart_container">
+                <svg class="zingchart_container">
+                </svg>
+                <svg class="zingchart_highchart">
+                </svg>
+                <div class="overlay"></div>
+                <span class="time_chart">Thời gian: <b class="time">19:00</b><span class="diamond"></span></span>
+            </div>
 
-        </ul>
+            <!-- realtiem footer -->
+            <div class="realtime_footer">
+            </div>
+        </div>
+
+        <!-- chart item container -->
+        <div class="side_zing_chart">
+            <ul class="chart_list">
+                <li class="chart_item">
+                    <div>
+                        <span class="number_order">01</span>
+                        <div class="image">
+                            <img src="../images/photo4.jpg" alt="image">
+                            <div class="overlay"></div>
+                            <span class="material-icons">
+                            play_arrow
+                        </span>
+                        </div>
+                        <div class="infor">
+                            <a class="song_name">Thích thì đến</a>
+                            <a class="singers">Lê Bảo Bình</a>
+                        </div>
+                    </div>
+                    <span class="percent">58%</span>
+                </li>
+
+                <li class="chart_item">
+                    <div>
+                        <span class="number_order">01</span>
+                        <div class="image">
+                            <img src="../images/photo4.jpg" alt="image">
+                            <div class="overlay"></div>
+                            <span class="material-icons">
+                        play_arrow
+                    </span>
+                        </div>
+                        <div class="infor">
+                            <a class="song_name">Thích thì đến</a>
+                            <a class="singers">Lê Bảo Bình</a>
+                        </div>
+                    </div>
+                    <span class="percent">58%</span>
+                </li>
+
+                <li class="chart_item">
+                    <div>
+                        <span class="number_order">01</span>
+                        <div class="image">
+                            <img src="../images/photo4.jpg" alt="image">
+                            <div class="overlay"></div>
+                            <span class="material-icons">
+                        play_arrow
+                    </span>
+                        </div>
+                        <div class="infor">
+                            <a class="song_name">Thích thì đến</a>
+                            <a class="singers">Lê Bảo Bình</a>
+                        </div>
+                    </div>
+                    <span class="percent">58%</span>
+                </li>
+
+                <li class="chart_item">
+                    <div>
+                        <span class="number_order">01</span>
+                        <div class="image">
+                            <img src="../images/photo4.jpg" alt="image">
+                            <div class="overlay"></div>
+                            <span class="material-icons">
+                        play_arrow
+                    </span>
+                        </div>
+                        <div class="infor">
+                            <a class="song_name">Thích thì đến</a>
+                            <a class="singers">Lê Bảo Bình</a>
+                        </div>
+                    </div>
+                    <span class="percent">58%</span>
+                </li>
+
+                <li class="chart_item">
+                    <div>
+                        <span class="number_order">01</span>
+                        <div class="image">
+                            <img src="../images/photo4.jpg" alt="image">
+                            <div class="overlay"></div>
+                            <span class="material-icons">
+                        play_arrow
+                    </span>
+                        </div>
+                        <div class="infor">
+                            <a class="song_name">Thích thì đến</a>
+                            <a class="singers">Lê Bảo Bình</a>
+                        </div>
+                    </div>
+                    <span class="percent">58%</span>
+                </li>
+                <div class="text_btn">
+                    Xem tất cả
+                </div>
+            </ul>
+        </div>
     </div>
+
     <!-- import header navbar js -->
     <script src="../js/headerNavbar/renderMenubar.js"></script>
     <script src="../js/headerNavbar/renderTrendingItems.js"></script>

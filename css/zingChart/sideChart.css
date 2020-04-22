@@ -1,8 +1,17 @@
+.side_zing_chart {
+    width: calc(100% - 667px);
+    background-color: #342458;
+}
+
 .side_zing_chart ul {
     padding: 20px 10px;
     list-style-type: none;
+    width: 100%;
 }
 
-.side_zing_chart ul li {
-    padding: 8px 10px 7px;
+.side_zing_chart .text_btn {
+    text-align: center;
+    color: #fff;
+    font-size: 0.75rem;
+    cursor: context-menu;
 }

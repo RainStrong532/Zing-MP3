@@ -1,15 +1,21 @@
+.all_chart_container {
+    display: flex;
+}
+
 .chart_realtime_container {
-    height: 400px;
-    /* height: 100%; */
     width: 667px;
     background-image: url(../../images/bg-chart.jpg);
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .chart_container {
     position: relative;
-    width: 500px;
-    height: 300px;
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .chart_container .overlay {
@@ -22,7 +28,6 @@
 }
 
 .chart_container .zingchart_container {
-    /* border: 1px solid #333; */
     position: relative;
     z-index: 10;
     width: 100%;

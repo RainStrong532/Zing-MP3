@@ -35,6 +35,7 @@ for (let i = 0; i < 24; i++) {
 
 let chartWidth = zingchartContainer.clientWidth;
 let chartHeight = zingchartContainer.clientHeight;
+chartHeight *= 0.9;
 
 let distancePoints = (chartWidth - 40) / 24;
 
