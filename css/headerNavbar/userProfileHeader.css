@@ -1,6 +1,7 @@
 header.header .top_bar .user_profile {
     display: flex;
     align-items: center;
+    z-index: 20;
 }
 
 header.header .top_bar .user_profile .user_info {
