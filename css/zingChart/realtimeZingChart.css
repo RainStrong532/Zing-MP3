@@ -71,6 +71,7 @@
     justify-content: space-between;
     position: relative;
     bottom: 0;
+    margin-bottom: 20px;
     /* margin: 0 auto; */
 }
 
