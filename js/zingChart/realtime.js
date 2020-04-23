@@ -16,6 +16,7 @@ function setTimeArray() {
     }
 }
 setTimeArray();
+let count = 0;
 
 function upToDate() {
     setInterval(() => {
@@ -26,5 +27,17 @@ function upToDate() {
     setInterval(() => {
         setTimeArray();
     }, 60000);
+    setInterval(() => {
+        points.forEach((e) => {
+            e.style.visibility = 'hidden';
+        })
+        tops.forEach((e) => {
+            e.classList.remove('active');
+        })
+        points[count].style.visibility = 'visible';
+        tops[count].classList.add('active');
+        (count === 2) ? count = 0: ++count;
+        console.log(count);
+    }, 2000);
 }
 upToDate();

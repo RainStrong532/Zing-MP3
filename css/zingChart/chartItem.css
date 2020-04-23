@@ -14,7 +14,7 @@
 .chart_item>div .number_order {
     white-space: nowrap;
     font-size: 1.25rem;
-    color: #50e3c2;
+    color: #fff;
     font-weight: 400;
     margin-right: 10px;
     word-break: break-word;
@@ -100,11 +100,32 @@
 }
 
 .chart_item .percent {
-    color: #50e3c2;
+    color: #fff;
     font-size: 1rem;
     font-weight: 400;
 }
 
 .chart_item>div .infor a:last-child:hover {
     color: #6e55b4;
+}
+
+.chart_list .top:nth-child(1) .number_order,
+.chart_list .top:nth-child(1) .percent {
+    color: #4a90e2;
+}
+
+.chart_list .top:nth-child(2) .number_order,
+.chart_list .top:nth-child(2) .percent {
+    color: #50e3c3;
+}
+
+.chart_list .top:nth-child(3) .number_order,
+.chart_list .top:nth-child(3) .percent {
+    color: #e4340d;
+}
+
+.chart_item.active {
+    background-color: rgba(255, 255, 255, .15);
+    border-color: transparent;
+    border-radius: 4px;
 }

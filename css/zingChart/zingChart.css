@@ -18,6 +18,10 @@
     justify-content: space-between;
 }
 
+.chart_container .paths {
+    transition: all 0.3s;
+}
+
 .chart_container .overlay {
     position: absolute;
     width: 100%;
@@ -80,4 +84,8 @@
 .chart_container .time_chart b.time {
     font-size: 0.75rem;
     color: #fcfcfc;
+}
+
+.chart_container .top_musics .points {
+    visibility: hidden;
 }

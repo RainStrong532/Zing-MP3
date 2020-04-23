@@ -3,8 +3,11 @@ const highchart_line = document.querySelector('.chart_container .zingchart_highc
 const time_chart = document.querySelector('.time_chart');
 const diamond = document.querySelector('.chart_container .time_chart .diamond');
 const time = document.querySelector('.chart_container .time_chart .time');
+const tops = document.querySelectorAll('.chart_list .top');
+let points = document.querySelectorAll('.chart_container .top_musics .points');
+const paths = document.querySelectorAll('.chart_container .top_musics .paths');
 
-zingchartContainer.addEventListener('mouseout', () => {
+chart_overlay.addEventListener('mouseout', () => {
     highchart_line.style.visibility = 'hidden';
     time_chart.style.visibility = 'hidden';
     diamond.style.visibility = 'hidden';
@@ -49,19 +52,34 @@ chart_overlay.addEventListener('mousemove', (e) => {
     let top_1 = top_songs[0][index] * chartHeight;
     let top_2 = top_songs[1][index] * chartHeight;
     let top_3 = top_songs[2][index] * chartHeight;
+
+    //reset
+    points.forEach((e) => {
+        e.style.visibility = 'hidden';
+    })
+    tops.forEach((e) => {
+            e.classList.remove('active');
+        })
+        // end reset
     if (heightY >= 0 && heightY < top_3 + (top_2 - top_3) / 2) {
         highchart_line.style.stroke = colorPath[2];
         time_chart.style.backgroundColor = colorPath[2];
         transY = chartHeight - top_3 - time_chart.clientHeight - 15 + 'px';
+        points[2].style.visibility = 'visible';
+        tops[2].classList.add('active');
 
     } else if (heightY > top_2 + (top_1 - top_2) / 2) {
         highchart_line.style.stroke = colorPath[0];
         time_chart.style.backgroundColor = colorPath[0];
         transY = chartHeight - top_1 - time_chart.clientHeight - 15 + 'px';
+        points[0].style.visibility = 'visible';
+        tops[0].classList.add('active');
     } else {
         highchart_line.style.stroke = colorPath[1];
         time_chart.style.backgroundColor = colorPath[1];
         transY = chartHeight - top_2 - time_chart.clientHeight - 15 + 'px';
+        points[1].style.visibility = 'visible';
+        tops[1].classList.add('active');
     }
     if (transY) {
         time_chart.style.transform = 'translate(' + transX + ', ' + transY + ')';
