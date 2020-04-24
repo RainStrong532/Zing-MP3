@@ -1,0 +1,154 @@
+.album_slider_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.album_slider_container .slider_container {
+    width: 400%;
+    display: flex;
+    animation: slide 20s backwards ease-in-out infinite;
+}
+
+.album_slider_container .slider_container .album_slide {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: calc(100%/3);
+}
+
+.album_slider_container .slider_container .album_slide a {
+    height: 100%;
+    cursor: pointer;
+}
+
+.album_slider_container .slider_container .album_slide .slide {
+    background-image: url(../../images/spotlight-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 330px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+}
+
+.album_slider_container .slider_container .album_slide .slide:hover .image img {
+    transform: scale(1.1);
+}
+
+.album_slider_container .slider_container .album_slide .slide:hover .image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.album_slider_container .slider_container .album_slide .slide:hover .image span {
+    visibility: visible;
+    z-index: 2;
+}
+
+.album_slider_container .slider_container .album_slide .slide .image {
+    max-width: 120px;
+    max-height: 120px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.album_slider_container .slider_container .album_slide .slide .image img {
+    width: 100%;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.album_slider_container .slider_container .album_slide .slide .image span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    color: #fff;
+    font-size: 40px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 66%;
+}
+
+.album_slider_container .slider_container .album_slide .slide .card_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.album_slider_container .slider_container .album_slide .slide .card_info .spot_choice {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    background: linear-gradient(to right, #f508b7, #9102ff);
+    padding: 3px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 12px;
+    word-break: break-word;
+    margin: 0 0 3px;
+}
+
+.album_slider_container .slider_container .album_slide .slide .card_info .spot_choice span:first-child {
+    margin-right: 2px;
+}
+
+.album_slider_container .slider_container .album_slide .slide .card_info .spot_choice span {
+    color: inherit;
+    font-size: inherit;
+    cursor: pointer;
+}
+
+.album_slider_container .slider_container .album_slide .slide .card_info .singer_name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.36;
+    cursor: pointer;
+}
+
+.album_slider_container .slider_container .album_slide .slide .card_info .singer_name:hover {
+    color: #6e55b4;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    14.16% {
+        transform: translateX(0);
+    }
+    19.16% {
+        transform: translateX(-25%);
+    }
+    47.51% {
+        transform: translateX(-25%);
+    }
+    52.51% {
+        transform: translateX(-50%);
+    }
+    80.84% {
+        transform: translateX(-50%);
+    }
+    85.84% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(-75%);
+    }
+}
