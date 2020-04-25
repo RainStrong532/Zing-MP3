@@ -1,4 +1,4 @@
-.container_v2 {
+.container_pt20 {
     padding-top: 20px;
 }
 
@@ -32,28 +32,29 @@
     color: #6e55b4;
 }
 
-.container .slider_v2_container {
+.container .slider_new_release_container {
     width: 100%;
     overflow: hidden;
 }
 
-.container .slider_v2_container .slider_container {
+.container .slider_new_release_container .slider_container {
     display: flex;
+    padding-bottom: 10px;
 }
 
-.container .slider_v2_container .album_slide {
+.container .slider_new_release_container .album_slide {
     display: flex;
     width: 25%;
     justify-content: space-between;
 }
 
-.container .slider_v2_container .album_slide .slide {
+.container .slider_new_release_container .album_slide .slide {
     flex-grow: 1;
     width: 33.33%;
     margin: 0 9.5px;
 }
 
-.container .slider_v2_container .album_slide .slide .watch_all {
+.container .slider_new_release_container .album_slide .slide .watch_all {
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -65,14 +66,14 @@
     cursor: pointer;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .image {
+.container .slider_new_release_container .slider_container .album_slide .slide .image {
     width: 120px;
     height: 120px;
     position: relative;
     overflow: hidden;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .image:hover::before {
+.container .slider_new_release_container .slider_container .album_slide .slide .image:hover::before {
     content: '';
     display: block;
     position: absolute;
@@ -84,21 +85,21 @@
     z-index: 1;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .image:hover img {
+.container .slider_new_release_container .slider_container .album_slide .slide .image:hover img {
     transform: scale(1.1);
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .image:hover span {
+.container .slider_new_release_container .slider_container .album_slide .slide .image:hover span {
     visibility: visible;
     z-index: 2;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .image img {
+.container .slider_new_release_container .slider_container .album_slide .slide .image img {
     width: 100%;
     transition: all 0.3s;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .image span {
+.container .slider_new_release_container .slider_container .album_slide .slide .image span {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -111,7 +112,7 @@
     visibility: hidden;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide {
+.container .slider_new_release_container .slider_container .album_slide .slide {
     display: flex;
     justify-content: space-between;
     background-color: #fff;
@@ -123,7 +124,7 @@
     height: 100%;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -131,20 +132,20 @@
     margin: 0 0 0 10px;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info .info {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     cursor: pointer;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info .info .song_name {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info .song_name {
     font-size: 16px;
     font-weight: 700;
     line-height: 1.38;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info .info .singer {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info .singer {
     font-size: 12px;
     line-height: 1.36;
     color: inherit;
@@ -153,18 +154,18 @@
     color: #a0a0a0;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info .info .singer:hover {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info .singer:hover {
     color: #6e55b4;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info .order {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .order {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     cursor: pointer;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info .order .order_number {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .order .order_number {
     -webkit-text-stroke: 2px rgba(102, 69, 193, .4);
     font-size: 50px;
     font-stretch: normal;
@@ -178,7 +179,7 @@
     white-space: nowrap;
 }
 
-.container .slider_v2_container .slider_container .album_slide .slide .card_info .order .date {
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .order .date {
     color: #dbdbdb;
     font-size: 12px;
     height: 16px;
