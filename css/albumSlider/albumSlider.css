@@ -13,7 +13,7 @@
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: calc(100%/3);
+    width: 25%;
 }
 
 .album_slider_container .slider_container .album_slide a {
@@ -58,14 +58,12 @@
     max-width: 120px;
     max-height: 120px;
     position: relative;
-    border-radius: 50%;
     overflow: hidden;
 }
 
 .album_slider_container .slider_container .album_slide .slide .image img {
     width: 100%;
     cursor: pointer;
-    border-radius: 50%;
     transition: all 0.3s;
 }
 
@@ -75,11 +73,9 @@
     left: 50%;
     transform: translate(-50%, -50%);
     visibility: hidden;
-    color: #fff;
     font-size: 40px;
-    display: inline-block;
-    cursor: pointer;
-    line-height: 66%;
+    color: #fff;
+    z-index: 2;
 }
 
 .album_slider_container .slider_container .album_slide .slide .card_info {
@@ -130,23 +126,20 @@
     0% {
         transform: translateX(0);
     }
-    14.16% {
+    28.32% {
         transform: translateX(0);
     }
-    19.16% {
+    33.32% {
         transform: translateX(-25%);
     }
-    47.51% {
+    61.67% {
         transform: translateX(-25%);
     }
-    52.51% {
+    66.67% {
         transform: translateX(-50%);
     }
-    80.84% {
+    95% {
         transform: translateX(-50%);
-    }
-    85.84% {
-        transform: translateX(-75%);
     }
     100% {
         transform: translateX(-75%);
