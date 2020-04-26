@@ -106,6 +106,7 @@
 .box_new_song .list_btn div span {
     font-size: 16px;
     color: #2a2b3f;
+    cursor: pointer;
 }
 
 .box_new_song:hover .list_btn {
