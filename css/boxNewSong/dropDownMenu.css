@@ -5,8 +5,10 @@
     min-width: 220px;
     z-index: 1060;
     border-radius: 3px;
-    position: relative;
+    position: absolute;
+    display: none;
     background-color: #fcfcfc;
+    transform: translateY(-50%);
 }
 
 .dropdn_menu .song_info {
@@ -14,6 +16,7 @@
     padding: 15px;
     border-bottom: 1px solid #efefef;
     max-width: 230px;
+    position: relative;
 }
 
 .dropdn_menu .song_info .card_info .song_name {
@@ -68,6 +71,20 @@
     display: block;
 }
 
+.dropdn_menu .song_info .dropdown_playlist.left {
+    top: -30px;
+    left: -95%;
+}
+
+.dropdn_menu.top {
+    transform: translateY(0);
+}
+
+.dropdn_menu .song_info .dropdown_playlist.right {
+    top: -30px;
+    left: 95%;
+}
+
 .dropdn_menu .song_info .dropdown_playlist {
     width: 230px;
     box-shadow: rgba(0, 0, 0, .2) 0 0 5px 0;
@@ -76,8 +93,7 @@
     z-index: 1080;
     position: absolute;
     padding: 15px;
-    top: -30px;
-    left: 95%;
+    top: -50%;
     display: none;
 }
 

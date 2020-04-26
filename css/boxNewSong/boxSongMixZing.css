@@ -28,7 +28,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     color: #65509e;
-    font-size: 18px;
+    font-size: 20px;
     line-height: 0;
     visibility: hidden;
 }
@@ -39,6 +39,6 @@
 }
 
 .box_new_song .mix_zing .song_name {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
 }
