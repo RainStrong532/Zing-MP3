@@ -34,7 +34,7 @@
 }
 
 .album_slider_container .slider_container .album_slide .slide:hover .image img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .album_slider_container .slider_container .album_slide .slide:hover .image::before {
@@ -64,7 +64,7 @@
 .album_slider_container .slider_container .album_slide .slide .image img {
     width: 100%;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.7s;
 }
 
 .album_slider_container .slider_container .album_slide .slide .image span {
