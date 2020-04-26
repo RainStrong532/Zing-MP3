@@ -1,0 +1,113 @@
+.box_new_song {
+    display: flex;
+    background-color: transparent;
+    position: relative;
+}
+
+.box_new_song .image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 2px;
+    margin-right: 10px;
+}
+
+.box_new_song .image>img {
+    width: 100%;
+}
+
+.box_new_song .image>span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fcfcfc;
+    font-size: 20px;
+    z-index: 2;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.box_new_song .image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    visibility: hidden;
+}
+
+.box_new_song .image:hover::before {
+    visibility: visible;
+}
+
+.box_new_song .image:hover>span {
+    visibility: visible;
+}
+
+.box_new_song .card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.box_new_song .card_info .song_name {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.36;
+    text-align: left;
+    color: inherit;
+    white-space: nowrap;
+    cursor: context-menu;
+}
+
+.box_new_song .card_info .singer_name:hover {
+    color: #6e55b4;
+}
+
+.box_new_song .card_info .singer_name {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.33;
+    text-align: left;
+    color: inherit;
+    user-select: none;
+    cursor: pointer;
+}
+
+.box_new_song .list_btn {
+    display: flex;
+    background-color: #f7f7f7;
+    visibility: hidden;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.box_new_song .list_btn div {
+    padding: 5px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 0;
+    margin: 2.5px;
+}
+
+.box_new_song .list_btn div:hover {
+    background-color: #e8e8e8;
+    color: #000;
+}
+
+.box_new_song .list_btn div span {
+    font-size: 16px;
+    color: #2a2b3f;
+}
+
+.box_new_song:hover .list_btn {
+    visibility: visible;
+}
