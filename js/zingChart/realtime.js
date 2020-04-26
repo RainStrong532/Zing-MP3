@@ -37,7 +37,7 @@ function upToDate() {
         points[count].style.visibility = 'visible';
         tops[count].classList.add('active');
         (count === 2) ? count = 0: ++count;
-        console.log(count);
+
     }, 2000);
 }
 upToDate();

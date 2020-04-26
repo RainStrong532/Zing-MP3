@@ -1,0 +1,110 @@
+.hot_slider_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.hot_slider_container .slider_container {
+    width: 300%;
+    display: flex;
+    animation: slide2 12s backwards ease-in-out infinite;
+}
+
+.hot_slider_container .slider_container .album_slide {
+    width: 33.333333%;
+    display: flex;
+}
+
+.hot_slider_container .slider_container .slide {
+    padding: 0 9.5px;
+    cursor: pointer;
+}
+
+.hot_slider_container .slider_container .slide .image {
+    position: relative;
+    overflow: hidden;
+}
+
+.hot_slider_container .slider_container .slide .image img {
+    width: 100%;
+    transition: all 0.7s;
+}
+
+.hot_slider_container .slider_container .slide .image span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 50px;
+    z-index: 2;
+    visibility: hidden;
+}
+
+.hot_slider_container .slider_container .slide:hover .image:hover img {
+    transform: scale(1.05);
+}
+
+.hot_slider_container .slider_container .slide:hover .image::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hot_slider_container .slider_container .slide:hover span {
+    visibility: visible;
+}
+
+.hot_slider_container .slider_container .slide .card_info a {
+    display: block;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.hot_slider_container .slider_container .slide .card_info a.song_name {
+    font-size: 14px;
+    font-weight: 800;
+    color: #32323d;
+    overflow: hidden;
+    line-height: 1.45;
+    margin: 8px 0 3px;
+    text-transform: capitalize;
+}
+
+.hot_slider_container .slider_container .slide .card_info a.singer_name {
+    color: #a0a0a0;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.3;
+    margin: 0 2px 0 0;
+}
+
+.hot_slider_container .slider_container .slide .card_info a:hover {
+    color: #6e55b4;
+}
+
+@keyframes slide2 {
+    0% {
+        transform: translateX(0);
+    }
+    22.5% {
+        transform: translateX(0);
+    }
+    27.5% {
+        transform: translateX(-33.33%);
+    }
+    72.5% {
+        transform: translateX(-33.33%);
+    }
+    77.5% {
+        transform: translateX(-66.67%);
+    }
+    100% {
+        transform: translateX(-66.67%);
+    }
+}
