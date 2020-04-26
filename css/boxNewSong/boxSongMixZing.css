@@ -1,0 +1,44 @@
+.box_new_song .mix_zing {
+    justify-content: center;
+}
+
+.box_new_song .order {
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    width: 25px;
+}
+
+.box_new_song:hover .order span:last-child {
+    visibility: visible;
+}
+
+.box_new_song:hover .order span:first-child {
+    visibility: hidden;
+}
+
+.box_new_song .order span {
+    cursor: pointer;
+}
+
+.box_new_song .order span:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #65509e;
+    font-size: 18px;
+    line-height: 0;
+    visibility: hidden;
+}
+
+.box_new_song .order span:first-child {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.box_new_song .mix_zing .song_name {
+    font-weight: 500;
+    font-size: 14px;
+}
