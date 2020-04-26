@@ -3,6 +3,15 @@
     margin: 0 auto;
 }
 
+.container_1045 {
+    max-width: 1045px;
+    margin: 0 auto;
+}
+
+.container_1026 {
+    max-width: 1026px;
+}
+
 @media (max-width: 1016px) {
     header.header .top_bar .menu_bar .menu_bar_inner>li:nth-child(4) {
         display: none;

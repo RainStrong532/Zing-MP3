@@ -1,0 +1,74 @@
+.hot_slider_container .slider_container .slide_mvhot_first .image .card_info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 20px 15px;
+    line-height: normal;
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .8));
+    border-radius: 2px;
+}
+
+.hot_slider_container .slider_container .slide_mvhot_first .image .card_info>div {
+    color: #fcfcfc;
+    font-size: 14px;
+}
+
+.hot_slider_container .slider_container .slide_mvhot_first .image .card_info .song_name {
+    font-weight: 800;
+}
+
+.hot_slider_container .slider_container .slide_mvhot_first .image .card_info .singer_name {
+    font-weight: 500;
+}
+
+.hot_slider_container .slider_container .slide_mvhot_first:hover .image::before {
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, .5));
+}
+
+.hot_slider_container .slider_container .slide_mvhot_first:hover .image .card_info {
+    visibility: hidden;
+}
+
+.hot_slider_container .slider_container .slide_mvhot>a {
+    margin-bottom: 20px;
+    display: block;
+}
+
+.hot_slider_container .slider_container .slide_mvhot:hover .image::before {
+    display: none;
+}
+
+.hot_slider_container .slider_container .slide_mvhot:hover .image span {
+    visibility: hidden;
+}
+
+.hot_slider_container .slider_container .slide_mvhot .image:hover>span {
+    visibility: visible;
+}
+
+.hot_slider_container .slider_container .slide_mvhot .image:hover::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hot_slider_container .slider_container .slide_mvhot .card_info .song_name {
+    margin: 3px 0 0;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.hot_slider_container .slider_container .slide_mvhot .card_info .singer_name {
+    font-size: 12px;
+    color: #a0a0a0;
+    font-weight: 500;
+    white-space: nowrap;
+}

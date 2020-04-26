@@ -8,10 +8,6 @@
     line-height: 1.5;
 }
 
-body {
-    height: 250vh;
-}
-
 .inner_space {
     position: sticky;
     top: 0;
@@ -19,4 +15,23 @@ body {
     height: 124px;
     background-color: transparent;
     z-index: -1;
+}
+
+.border-radius-50 {
+    border-radius: 50%;
+}
+
+.card-190 {
+    width: 190px;
+    height: 190px;
+}
+
+.card-190-107 {
+    width: 190px;
+    height: 107px;
+}
+
+.card-343-608 {
+    height: 343px;
+    width: 608px;
 }
