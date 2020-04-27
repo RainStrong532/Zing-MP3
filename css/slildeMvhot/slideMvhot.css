@@ -9,16 +9,20 @@
     border-radius: 2px;
 }
 
+.hot_slider_container .slider_container .slide_mvhot {
+    max-width: 209px;
+}
+
 .hot_slider_container .slider_container .slide_mvhot_first .image .card_info>div {
     color: #fcfcfc;
     font-size: 14px;
 }
 
-.hot_slider_container .slider_container .slide_mvhot_first .image .card_info .song_name {
+.hot_slider_container .slider_container .slide_mvhot_first .image .card_info div:first-child {
     font-weight: 800;
 }
 
-.hot_slider_container .slider_container .slide_mvhot_first .image .card_info .singer_name {
+.hot_slider_container .slider_container .slide_mvhot_first .image .card_info div:last-child {
     font-weight: 500;
 }
 
@@ -63,12 +67,13 @@
 .hot_slider_container .slider_container .slide_mvhot .card_info .song_name {
     margin: 3px 0 0;
     font-size: 14px;
-    font-weight: 800;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .hot_slider_container .slider_container .slide_mvhot .card_info .singer_name {
     font-size: 12px;
     color: #a0a0a0;
-    font-weight: 500;
-    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

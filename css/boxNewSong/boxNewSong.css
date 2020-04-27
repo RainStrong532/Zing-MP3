@@ -88,6 +88,8 @@
     align-items: center;
     position: absolute;
     right: 0;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .box_new_song .list_btn div {

@@ -1,7 +1,7 @@
-let listItems = document.querySelectorAll('.mix_zing_choice .mix_list .list>li');
-let dropDns = document.querySelectorAll('.mix_zing_choice .mix_list .list>li .dropdn_menu');
-let listBtns = document.querySelectorAll('.mix_zing_choice .mix_list .list .list_btn');
-let extendBtns = document.querySelectorAll('.mix_zing_choice .mix_list .list .list_btn .btn:last-child');
+let listItems = document.querySelectorAll('.list>li');
+let dropDns = document.querySelectorAll('.list>li .dropdn_menu');
+let listBtns = document.querySelectorAll('.list .list_btn');
+let extendBtns = document.querySelectorAll('.list .list_btn .btn:last-child');
 listItems.forEach((item, index) => {
     extendBtns[index].addEventListener('click', (e) => {
         dropDns[index].style.left = '95%'
