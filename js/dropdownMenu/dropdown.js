@@ -8,15 +8,19 @@ listItems.forEach((item, index) => {
         dropDns[index].style.display = 'block'
     })
     item.addEventListener('contextmenu', (e) => {
+        e.preventDefault();
         dropDns.forEach((item) => {
             item.style.display = 'none'
         })
         console.log(e.offsetX)
         dropDns[index].style.display = 'block'
-        dropDns[index].style.left = e.offsetX + 'px'
+        dropDns[index].style.left = e.offsetX + 20 + 'px'
+        return false;
     }, true)
-    listBtns[index].addEventListener('contextmenu', () => {
-        dropDns[index].style.display = 'none'
+    listBtns[index].addEventListener('contextmenu', (e) => {
+        e.preventDefault();
+        dropDns[index].style.display = 'none';
+        return false;
     })
     window.addEventListener('click', (e) => {
         dropDns[index].style.display = 'none'

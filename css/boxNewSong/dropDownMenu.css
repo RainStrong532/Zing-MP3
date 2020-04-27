@@ -77,7 +77,7 @@
 }
 
 .dropdn_menu.top {
-    transform: translateY(0);
+    transform: translateY(-10px);
 }
 
 .dropdn_menu .song_info .dropdown_playlist.right {
