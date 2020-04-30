@@ -5864,9 +5864,9 @@
                         <div class="box_new_song">
                             <div class="image card-40">
                                 <img src="../images/dinhtunghuy.jpg" alt="image">
-                                <span class="material-icons">
+                                <span class="material-icons play_pause_btn" data-id="2">
                                 play_arrow
-                            </span>
+                                </span>
                             </div>
                             <div class="card_info">
                                 <div class="song_name">Cứ ngỡ là anh</div>
@@ -6070,7 +6070,7 @@
                     skip_previous
                 </span>
 
-                <span class="material-icons play_status">
+                <span class="material-icons play_status play_pause_btn" data-id="1">
                     play_circle_outline
                 </span>
 
@@ -6114,7 +6114,11 @@
 
                     </div>
                     <div class="song_playing">
-                        <div class="song_slider"></div>
+                        <div class="slide_full">
+                            <div class="slide_fill"></div>
+                            <div class="slide_handle"></div>
+                            <div class="slide_buffer"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -6151,8 +6155,12 @@
                 </div>
             </div>
         </div>
-        <audio class="audio" data-id="1" src="../musics/THÍCH THÌ ĐẾN - LÊ BẢO BÌNH - id_1.mp3"></audio>
+        <audio class="audio"></audio>
     </div>
+
+    <!-- data -->
+    <script src="../js/data.js"></script>
+
     <!-- import header navbar js -->
     <script src="../js/headerNavbar/renderMenubar.js "></script>
     <script src="../js/headerNavbar/renderTrendingItems.js "></script>
@@ -6179,6 +6187,9 @@
 
     <!-- import drop down -->
     <script src="../js/dropdownMenu/dropdown.js "></script>
+
+    <!-- import zing play js -->
+    <script src="../js/zingMnPlay/zingMnPlay.js"></script>
 
 </body>
 
