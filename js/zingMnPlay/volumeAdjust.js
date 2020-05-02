@@ -11,7 +11,6 @@ volume_adjust.addEventListener('mouseout', () => {
 
 volume_range.oninput = () => {
     audio.volume = volume_range.value / 100;
-    console.log(audio.volume);
     volume_range.style.background = 'linear-gradient(90deg, #815fdd ' + volume_range.value + '%, #ddd ' + volume_range.value + '%)'
     if (audio.volume === 0.01) {
         document.querySelector('.volume_adjust .material-icons').innerHTML = 'volume_off';

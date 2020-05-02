@@ -106,6 +106,8 @@ function audioInit(e) {
 
 function audioAction(e) {
     document.querySelector('.zing_mini_player').style.display = 'block';
+    document.querySelector('.inner_space_footer').style.display = 'block';
+    document.querySelector('.beta_list').style.bottom = '80px'
     if (!e.target.start) {
         audioInit(e);
         e.target.start = true;
