@@ -73,6 +73,7 @@
     <!-- import zing mini player css -->
 
     <link rel="stylesheet" href="../css/zingMiniPlayer/zingMiniPlayer.css">
+    <link rel="stylesheet" href="../css/zingMiniPlayer/volumeAdjust.css">
 
     <!-- responsive container -->
     <link rel="stylesheet" href="../css/responsiveContainer.css">
@@ -5539,14 +5540,14 @@
                     <li>
                         <div class="box_new_song">
                             <div class="image card-40">
-                                <img src="../images/dinhtunghuy.jpg" alt="image">
-                                <span class="material-icons">
+                                <img src="../images/singerImages/JustinBieber.jpg" alt="image">
+                                <span class="material-icons play_pause_btn" data-id="3">
                                 play_arrow
                             </span>
                             </div>
                             <div class="card_info">
-                                <div class="song_name">Cứ ngỡ là anh</div>
-                                <div class="singer_name">Đinh Tùng Huy</div>
+                                <div class="song_name">As Long as you love me</div>
+                                <div class="singer_name">Justin Bieber</div>
                             </div>
                             <div class="list_btn">
                                 <div class="btn">
@@ -5701,14 +5702,14 @@
                     <li>
                         <div class="box_new_song">
                             <div class="image card-40">
-                                <img src="../images/dinhtunghuy.jpg" alt="image">
-                                <span class="material-icons">
+                                <img src="../images/singerImages/LeBaoBinh.jpg" alt="image">
+                                <span class="material-icons play_pause_btn" data-id="1">
                                 play_arrow
                             </span>
                             </div>
                             <div class="card_info">
-                                <div class="song_name">Cứ ngỡ là anh</div>
-                                <div class="singer_name">Đinh Tùng Huy</div>
+                                <div class="song_name">Thích thì đến</div>
+                                <div class="singer_name">Lê Bảo Bình</div>
                             </div>
                             <div class="list_btn">
                                 <div class="btn">
@@ -6063,14 +6064,14 @@
 
     <!-- zing mini player -->
 
-    <div class="zing_mini_player">
+    <div class="zing_mini_player" style="display: block;">
         <div class="container">
             <div class="control">
                 <span class="material-icons skip_previous">
                     skip_previous
                 </span>
 
-                <span class="material-icons play_status play_pause_btn" data-id="1">
+                <span class="material-icons play_status" data-id="1">
                     play_circle_outline
                 </span>
 
@@ -6094,57 +6095,68 @@
                     <div class="song_info_detail">
                         <div>
                             <span class="song_name">Thích thì đến</span>
-                            <span class="singer_name">- Lê Bảo Bình
+                            <span class="singer_name">- Lê Bảo Bình</span>
                             <span class="material-icons">
                                 grade
-                            </span>
                             </span>
                         </div>
 
                         <div>
                             <span class="time_duration">
                                 <span class="current">
-                                    1:00
+                                    00:00
                                 </span> /
                             <span class="duration">
-                                    3:00
+                                    03:00
                                 </span>
                             </span>
                         </div>
 
                     </div>
                     <div class="song_playing">
-                        <div class="slide_full">
-                            <div class="slide_fill"></div>
-                            <div class="slide_handle"></div>
-                            <div class="slide_buffer"></div>
-                        </div>
+                        <input type="range" class="range" value="0" min="0" max="100" step="0.01">
                     </div>
                 </div>
             </div>
             <div class="features_wrapper">
                 <div class="player_action">
-                    <span class="material-icons">
+                    <div>
+                        <span class="material-icons">
                         favorite_border
                     </span>
-
-                    <span class="mv_icon">
+                    </div>
+                    <div>
+                        <span class="mv_icon">
                     </span>
-
-                    <span class="material-icons">
+                    </div>
+                    <div>
+                        <span class="material-icons">
                         mic
                     </span>
+                    </div>
 
-                    <span class="material-icons">
-                        volume_up
-                    </span>
-
-                    <span class="material-icons">
+                    <div>
+                        <span class="volume_adjust">
+                        <span class="material-icons">
+                            volume_up
+                        </span>
+                        <div class="volume_container">
+                            <div class="volume_inner">
+                                <div class="volume">
+                                    <input type="range" class="volume_range" max="100" min="1" value="100" step="0.01">
+                                </div>
+                            </div>
+                        </div>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="material-icons">
                             more_horiz
                     </span>
+                    </div>
                 </div>
                 <div class="play_list_wrapper">
-                    <a href="#">
+                    <a>
                         <span class="material-icons">
                         queue_music
                     </span>
@@ -6155,9 +6167,9 @@
                 </div>
             </div>
         </div>
-        <audio class="audio"></audio>
     </div>
 
+    <div style="width: 100%; height: 400px;"></div>
     <!-- data -->
     <script src="../js/data.js"></script>
 
@@ -6190,6 +6202,7 @@
 
     <!-- import zing play js -->
     <script src="../js/zingMnPlay/zingMnPlay.js"></script>
+    <script src="../js/zingMnPlay/volumeAdjust.js"></script>
 
 </body>
 
