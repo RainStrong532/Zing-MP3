@@ -21,9 +21,9 @@ let count = 0;
 function upToDate() {
     setInterval(() => {
         now = new Date();
-        nowString = ((now.getDate() > 9) ? now.getDate() : '0' + now.getDate()) + "/" + ((now.getMonth() > 8) ? (now.getMonth() + 1) : ("0" + (now.getMonth() + 1))) + "/" + now.getFullYear() + " " + now.getHours() + ":" + ((now.getMinutes() < 10) ? '0' + now.getMinutes() : now.getMinutes());
+        nowString = ((now.getDate() > 9) ? now.getDate() : '0' + now.getDate()) + "/" + ((now.getMonth() > 8) ? (now.getMonth() + 1) : ("0" + (now.getMonth() + 1))) + "/" + now.getFullYear() + " " + ((now.getHours() > 9) ? now.getHours() : '0' + now.getHours()) + ":" + ((now.getMinutes() < 10) ? '0' + now.getMinutes() : now.getMinutes());
         time_picker.innerHTML = nowString;
-    }, 100);
+    }, 1000);
     setInterval(() => {
         setTimeArray();
     }, 60000);
