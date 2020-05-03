@@ -2,11 +2,15 @@ search_input.addEventListener('keyup', (e) => {
     searchItems(e.target.value);
 })
 
+addEventTrendingItems();
+
 function searchItems(value) {
     let itemsFound = musicItems.filter(item => {
         return item.song.toLowerCase().indexOf(value.toLowerCase()) !== -1;
     })
     renderTrending(itemsFound.slice(0, 5));
+    addEventTrendingItems();
+
 }
 search_input.addEventListener('focus', (e) => {
     e.preventDefault();
@@ -29,23 +33,26 @@ window.addEventListener('click', (e) => {
     }
 
 })
-document.querySelectorAll('.play_music').forEach(element => {
-    element.addEventListener('click', (e) => {
-        trending.style.display = 'none';
-        let elements = document.querySelectorAll('.play_pause_btn[data-id="' + element.dataset.id + '"]');
-        setTimeout(() => {
-            if (elements.length > 0) {
-                elements.forEach(item => {
-                    audioInit(item);
-                })
-            } else {
-                changeMusic(getMusic(element.dataset.id.toString()));
-                audio.play();
-                main_btn.innerHTML = play_pause[1];
-                audio.currentTime = 0;
-                handle_pos = 0;
-                updateAudioSlide();
-            }
-        }, 100)
+
+function addEventTrendingItems() {
+    document.querySelectorAll('.play_music').forEach(element => {
+        element.addEventListener('click', (e) => {
+            trending.style.display = 'none';
+            let elements = document.querySelectorAll('.play_pause_btn[data-id="' + element.dataset.id + '"]');
+            setTimeout(() => {
+                if (elements.length > 0) {
+                    elements.forEach(item => {
+                        audioInit(item);
+                    })
+                } else {
+                    changeMusic(getMusic(element.dataset.id.toString()));
+                    audio.play();
+                    main_btn.innerHTML = play_pause[1];
+                    audio.currentTime = 0;
+                    handle_pos = 0;
+                    updateAudioSlide();
+                }
+            }, 500)
+        })
     })
-})
+}

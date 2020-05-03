@@ -88,10 +88,11 @@ function updateAudioSlide() {
         input_range.value = handle_pos;
         input_range.style.background = 'linear-gradient(90deg, #8a6fd6 ' + handle_pos + '%, #A0A0A0 ' + handle_pos + '%)'
         convertTime(1);
+        convertTime(2);
         if (audio.currentTime === audio.duration) {
             setTimeout(() => {
-                btnAction(btnControl[2]);
-            }, 1000)
+                btnAction(btnControl[1]);
+            }, 200)
         }
     }, 500)
 }
