@@ -28,7 +28,7 @@
     align-items: center;
 }
 
-.zing_mini_player .container .control>span {
+.zing_mini_player .container .control span {
     margin: 0 20px 0 -5px;
     display: inline-block;
     padding: 5px;
@@ -38,12 +38,12 @@
     justify-content: center;
 }
 
-.zing_mini_player .container .control>span.repeat {
+.zing_mini_player .container .control span.repeat {
     color: #815fdd;
     opacity: .8;
 }
 
-.zing_mini_player .container .control>span.play_status {
+.zing_mini_player .container .control span.play_status {
     font-size: 40px;
     opacity: .9;
 }
@@ -101,6 +101,12 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+}
+
+.zing_mini_player .container .info_detail .song_info .song_info_detail>div:first-child {
+    overflow: hidden;
+    max-width: 225px;
+    max-height: 32px;
 }
 
 .zing_mini_player .container .info_detail .song_info .song_info_detail .song_name,
@@ -271,4 +277,44 @@ img.active::before {
 
 .material-icons.play_pause_btn.active {
     visibility: visible;
+}
+
+.btn_ctn {
+    position: relative;
+}
+
+.btn_ctn:hover::after {
+    display: inline-block;
+}
+
+.prev_container::after {
+    content: "Previous";
+}
+
+.next_container::after {
+    content: "Next";
+}
+
+.random_container::after {
+    content: "Radom";
+}
+
+.repeat_container::after {
+    content: "Reapeat";
+}
+
+.repeat_container::after,
+.random_container::after,
+.next_container::after,
+.prev_container::after {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 12px;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: -28px;
+    transform: translateX(-30%);
+    border-radius: 5px;
+    padding: 3px 5px;
+    display: none;
 }

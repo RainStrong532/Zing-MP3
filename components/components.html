@@ -73,7 +73,9 @@
     <!-- import zing mini player css -->
 
     <link rel="stylesheet" href="../css/zingMiniPlayer/zingMiniPlayer.css">
-    <link rel="stylesheet" href="../css/zingMiniPlayer/volumeAdjust.css"> zing footer
+    <link rel="stylesheet" href="../css/zingMiniPlayer/volumeAdjust.css">
+
+    <!-- zing footer -->
 
     <link rel="stylesheet" href="../css/zingFooter/zingFooter.css">
 
@@ -99,7 +101,7 @@
                     <span class="material-icons">
                         search
                     </span>
-                    <input type="text" id="search_input" placeholder="Nhập tên bài hát, ca sĩ hoặc mv…" />
+                    <input type="text" id="search_input" autocomplete="off" placeholder="Nhập tên bài hát, ca sĩ hoặc mv…" />
                     <ul class="trending" id="trending">
                     </ul>
                 </div>
@@ -6069,25 +6071,29 @@
     <div class="zing_mini_player" style="display: block;">
         <div class="container">
             <div class="control">
-                <span class="material-icons skip_previous">
+                <div class="prev_container btn_ctn">
+                    <span class="material-icons skip_previous">
                     skip_previous
                 </span>
-
-                <span class="material-icons play_status" data-id="1">
+                </div>
+                <span class="material-icons play_status">
                     play_circle_outline
                 </span>
-
-                <span class="material-icons skip_next">
+                <div class="next_container btn_ctn">
+                    <span class="material-icons skip_next">
                     skip_next
                 </span>
-
-                <span class="material-icons shuffle">
+                </div>
+                <div class="random_container  btn_ctn">
+                    <span class="material-icons shuffle">
                     shuffle
                 </span>
-
-                <span class="material-icons repeat">
+                </div>
+                <div class="repeat_container btn_ctn">
+                    <span class="material-icons repeat">
                     repeat
                 </span>
+                </div>
             </div>
             <div class="info_detail">
                 <div class="card_image">
