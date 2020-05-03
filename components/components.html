@@ -70,6 +70,15 @@
 
     <link rel="stylesheet" href="../css/weekChart/weekChart.css">
 
+    <!-- import zing mini player css -->
+
+    <link rel="stylesheet" href="../css/zingMiniPlayer/zingMiniPlayer.css">
+    <link rel="stylesheet" href="../css/zingMiniPlayer/volumeAdjust.css">
+
+    <!-- zing footer -->
+
+    <link rel="stylesheet" href="../css/zingFooter/zingFooter.css">
+
     <!-- responsive container -->
     <link rel="stylesheet" href="../css/responsiveContainer.css">
 
@@ -92,7 +101,7 @@
                     <span class="material-icons">
                         search
                     </span>
-                    <input type="text" id="search_input" placeholder="Nhập tên bài hát, ca sĩ hoặc mv…" />
+                    <input type="text" id="search_input" autocomplete="off" placeholder="Nhập tên bài hát, ca sĩ hoặc mv…" />
                     <ul class="trending" id="trending">
                     </ul>
                 </div>
@@ -5535,14 +5544,176 @@
                     <li>
                         <div class="box_new_song">
                             <div class="image card-40">
-                                <img src="../images/dinhtunghuy.jpg" alt="image">
-                                <span class="material-icons">
+                                <img src="../images/singerImages/JustinBieber.jpg" alt="image">
+                                <span class="material-icons play_pause_btn" data-id="3">
                                 play_arrow
                             </span>
                             </div>
                             <div class="card_info">
-                                <div class="song_name">Cứ ngỡ là anh</div>
-                                <div class="singer_name">Đinh Tùng Huy</div>
+                                <div class="song_name">As Long as you love me</div>
+                                <div class="singer_name">Justin Bieber</div>
+                            </div>
+                            <div class="list_btn">
+                                <div class="btn">
+                                    <span class="material-icons">
+                                        mic
+                                        </span>
+                                </div>
+                                <div class="btn">
+                                    <span class="material-icons">
+                                        more_horiz
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdn_menu">
+                            <div class="song_info">
+                                <div class="dropdown_playlist left">
+                                    <div class="info_text">
+                                        <div class="text">
+                                            <div class="title">Ca sĩ:</div>
+                                            <div class="info">
+                                                <span>Đinh Tùng Huy,&nbsp;</span>
+                                                <span>ACV</span>
+                                            </div>
+                                        </div>
+                                        <div class="text">
+                                            <div class="title">ALBUM:</div>
+                                            <div class="info">
+                                                <span>Cữ ngỡ là anh</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="text">
+                                            <div class="title">Sáng tác:</div>
+                                            <div class="info">
+                                                <span>Đinh Tùng Huy</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="text">
+                                            <div class="title">Thể loại:</div>
+                                            <div class="info">
+                                                <span>Việt Nam,&nbsp;</span>
+                                                <span>Nhạc trẻ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image card-40">
+                                    <img src="../images/dinhtunghuy.jpg" alt="image">
+                                </div>
+                                <div class="card_info">
+                                    <div class="song_name">
+                                        Cứ ngỡ là anh
+                                    </div>
+                                    <div class="log_stats">
+                                        <div class="viewed">
+                                            <span class="material-icons">
+                            headset
+                            </span> 12.2M
+                                        </div>
+                                        <div class="liked">
+                                            <span class="material-icons">
+                                favorite_border
+                            </span> 6.5M
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="option_menu">
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                        favorite_border
+                    </span> Thêm vào thư viện
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                            library_add
+                            </span> Thêm vào danh sách phát
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                            redo
+                            </span> Phát tiếp theo
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                           add
+                            </span> Thêm vào playlist
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                            settings_input_antenna
+
+                            </span> Phát radio của bài hát
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons comment">
+                            mode_comment
+
+                            </span> Bình luận
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                            link
+
+                            </span> Sao chép link
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                            note_add
+
+                            </span> Đóng góp lời bài hát
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="menu_link">
+                                        <span class="material-icons">
+                            block
+
+                            </span> Chặn
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="box_new_song">
+                            <div class="image card-40">
+                                <img src="../images/singerImages/LeBaoBinh.jpg" alt="image">
+                                <span class="material-icons play_pause_btn" data-id="1">
+                                play_arrow
+                            </span>
+                            </div>
+                            <div class="card_info">
+                                <div class="song_name">Thích thì đến</div>
+                                <div class="singer_name">Lê Bảo Bình</div>
                             </div>
                             <div class="list_btn">
                                 <div class="btn">
@@ -5698,171 +5869,9 @@
                         <div class="box_new_song">
                             <div class="image card-40">
                                 <img src="../images/dinhtunghuy.jpg" alt="image">
-                                <span class="material-icons">
+                                <span class="material-icons play_pause_btn" data-id="2">
                                 play_arrow
-                            </span>
-                            </div>
-                            <div class="card_info">
-                                <div class="song_name">Cứ ngỡ là anh</div>
-                                <div class="singer_name">Đinh Tùng Huy</div>
-                            </div>
-                            <div class="list_btn">
-                                <div class="btn">
-                                    <span class="material-icons">
-                                        mic
-                                        </span>
-                                </div>
-                                <div class="btn">
-                                    <span class="material-icons">
-                                        more_horiz
-                                        </span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="dropdn_menu">
-                            <div class="song_info">
-                                <div class="dropdown_playlist left">
-                                    <div class="info_text">
-                                        <div class="text">
-                                            <div class="title">Ca sĩ:</div>
-                                            <div class="info">
-                                                <span>Đinh Tùng Huy,&nbsp;</span>
-                                                <span>ACV</span>
-                                            </div>
-                                        </div>
-                                        <div class="text">
-                                            <div class="title">ALBUM:</div>
-                                            <div class="info">
-                                                <span>Cữ ngỡ là anh</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="text">
-                                            <div class="title">Sáng tác:</div>
-                                            <div class="info">
-                                                <span>Đinh Tùng Huy</span>
-                                            </div>
-                                        </div>
-
-                                        <div class="text">
-                                            <div class="title">Thể loại:</div>
-                                            <div class="info">
-                                                <span>Việt Nam,&nbsp;</span>
-                                                <span>Nhạc trẻ</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="image card-40">
-                                    <img src="../images/dinhtunghuy.jpg" alt="image">
-                                </div>
-                                <div class="card_info">
-                                    <div class="song_name">
-                                        Cứ ngỡ là anh
-                                    </div>
-                                    <div class="log_stats">
-                                        <div class="viewed">
-                                            <span class="material-icons">
-                            headset
-                            </span> 12.2M
-                                        </div>
-                                        <div class="liked">
-                                            <span class="material-icons">
-                                favorite_border
-                            </span> 6.5M
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <ul class="option_menu">
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                        favorite_border
-                    </span> Thêm vào thư viện
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                            library_add
-                            </span> Thêm vào danh sách phát
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                            redo
-                            </span> Phát tiếp theo
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                           add
-                            </span> Thêm vào playlist
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                            settings_input_antenna
-
-                            </span> Phát radio của bài hát
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons comment">
-                            mode_comment
-
-                            </span> Bình luận
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                            link
-
-                            </span> Sao chép link
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                            note_add
-
-                            </span> Đóng góp lời bài hát
-                                    </a>
-                                </li>
-
-                                <li>
-                                    <a href="#" class="menu_link">
-                                        <span class="material-icons">
-                            block
-
-                            </span> Chặn
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
-
-                    <li>
-                        <div class="box_new_song">
-                            <div class="image card-40">
-                                <img src="../images/dinhtunghuy.jpg" alt="image">
-                                <span class="material-icons">
-                                play_arrow
-                            </span>
+                                </span>
                             </div>
                             <div class="card_info">
                                 <div class="song_name">Cứ ngỡ là anh</div>
@@ -6057,6 +6066,173 @@
         </div>
     </div>
 
+    <!-- zing mini player -->
+
+    <div class="zing_mini_player" style="display: block;">
+        <div class="container">
+            <div class="control">
+                <div class="prev_container btn_ctn">
+                    <span class="material-icons skip_previous">
+                    skip_previous
+                </span>
+                </div>
+                <span class="material-icons play_status">
+                    play_circle_outline
+                </span>
+                <div class="next_container btn_ctn">
+                    <span class="material-icons skip_next">
+                    skip_next
+                </span>
+                </div>
+                <div class="random_container  btn_ctn">
+                    <span class="material-icons shuffle">
+                    shuffle
+                </span>
+                </div>
+                <div class="repeat_container btn_ctn">
+                    <span class="material-icons repeat">
+                    repeat
+                </span>
+                </div>
+            </div>
+            <div class="info_detail">
+                <div class="card_image">
+                    <img src="../images/LeBaoBinh.jpg" alt="avt">
+                </div>
+                <div class="song_info">
+                    <div class="song_info_detail">
+                        <div>
+                            <span class="song_name">Thích thì đến</span>
+                            <span class="singer_name">- Lê Bảo Bình</span>
+                            <span class="material-icons">
+                                grade
+                            </span>
+                        </div>
+
+                        <div>
+                            <span class="time_duration">
+                                <span class="current">
+                                    00:00
+                                </span> /
+                            <span class="duration">
+                                    03:00
+                                </span>
+                            </span>
+                        </div>
+
+                    </div>
+                    <div class="song_playing">
+                        <input type="range" class="range" value="0" min="0" max="100" step="0.01">
+                    </div>
+                </div>
+            </div>
+            <div class="features_wrapper">
+                <div class="player_action">
+                    <div>
+                        <span class="material-icons">
+                        favorite_border
+                    </span>
+                    </div>
+                    <div>
+                        <span class="mv_icon">
+                    </span>
+                    </div>
+                    <div>
+                        <span class="material-icons">
+                        mic
+                    </span>
+                    </div>
+
+                    <div>
+                        <span class="volume_adjust">
+                        <span class="material-icons">
+                            volume_up
+                        </span>
+                        <div class="volume_container">
+                            <div class="volume_inner">
+                                <div class="volume">
+                                    <input type="range" class="volume_range" max="100" min="1" value="100" step="0.01">
+                                </div>
+                            </div>
+                        </div>
+                        </span>
+                    </div>
+                    <div>
+                        <span class="material-icons">
+                            more_horiz
+                    </span>
+                    </div>
+                </div>
+                <div class="play_list_wrapper">
+                    <a>
+                        <span class="material-icons">
+                        queue_music
+                    </span>
+                        <span>
+                        danh sách phát (<span class="number_of_song">100</span>)
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="container">
+        <div class="sub_container">
+            <div class="licesense_logo">
+                <div class="logo">
+                    <img src="../images/icon_zing_mp3_60.png" alt="logo">
+                </div>
+                <div class="coppy_righ">
+                    Một sản phẩm của Zalo
+                </div>
+            </div>
+            <div class="nav_footer">
+                <ul>
+                    <li>
+                        <a class="menu_link">Giới thiệu</a>
+                    </li>
+                    <div class="special">.</div>
+                    <li>
+                        <a class="menu_link">Liên hệ</a>
+                    </li>
+                    <div class="special">.</div>
+                    <li>
+                        <a class="menu_link">Quảng cáo</a>
+                    </li>
+                    <div class="special">.</div>
+                    <li>
+                        <a class="menu_link">Góp ý</a>
+                    </li>
+                    <div class="special">.</div>
+                    <li>
+                        <a class="menu_link">Thảo luận sử dụng</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="beta_list">
+        <div class="div back_to_top">
+            <span class="material-icons">
+                keyboard_arrow_up
+                </span>
+        </div>
+        <div class="div">
+            <span class="material-icons">
+                wb_incandescent
+            </span>
+        </div>
+    </div>
+
+    <div class="inner_space_footer"></div>
+
+    <!-- data -->
+    <script src="../js/data.js"></script>
+
     <!-- import header navbar js -->
     <script src="../js/headerNavbar/renderMenubar.js "></script>
     <script src="../js/headerNavbar/renderTrendingItems.js "></script>
@@ -6083,6 +6259,15 @@
 
     <!-- import drop down -->
     <script src="../js/dropdownMenu/dropdown.js "></script>
+
+    <!-- import zing play js -->
+
+    <script src="../js/zingMnPlay/zingMnPlay.js"></script>
+    <script src="../js/zingMnPlay/volumeAdjust.js"></script>
+
+    <!-- back to top -->
+
+    <script src="../js/backToTop.js"></script>
 
 </body>
 

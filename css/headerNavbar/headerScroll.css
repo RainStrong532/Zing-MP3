@@ -17,19 +17,19 @@ header.header .top_bar form.input_scroll {
     margin-left: 50%;
 }
 
-header.header .top_bar form.input_scroll:focus-within {
+header.header .top_bar form.input_scroll.active {
     position: relative;
     max-width: 540px;
     right: 0;
     margin-left: 0;
 }
 
-header.header .top_bar form.input_scroll:focus-within+.menu_bar {
+header.header .top_bar .menubar_scroll.active {
     visibility: hidden;
     transition: none;
 }
 
-header.header .top_bar form.input_scroll:focus-within~div.user_profile .user_info {
+header.header .top_bar div.user_profile.scroll .user_info.active {
     width: 120px;
 }
 

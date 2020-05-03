@@ -84,11 +84,11 @@ header.header .top_bar form .input_group input {
     background-color: transparent;
 }
 
-header.header .top_bar form .input_group input:focus+.trending {
-    display: block;
-}
-
-header.header .top_bar form .input_group input:focus {
+header.header .top_bar form .input_group input {
     outline-offset: 0;
     outline-width: 0;
+}
+
+header.header .top_bar form .input_group input:-internal-autofill-selected {
+    background: none!important;
 }
