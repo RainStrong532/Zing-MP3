@@ -1,83 +1,83 @@
 const topicItems = [{
         title: 'Trữ Tình & Bolero',
-        imageLink: '/images/singerImages/Trữ Tình & Bolero.jpg'
+        imageLink: 'images/singerImages/Trữ Tình & Bolero.jpg'
     },
     {
         title: 'Rock',
-        imageLink: '/images/singerImages/Rock.jpg'
+        imageLink: 'images/singerImages/Rock.jpg'
     },
     {
         title: 'EDM',
-        imageLink: '/images/singerImages/EDM.jpg'
+        imageLink: 'images/singerImages/EDM.jpg'
     },
     {
         title: 'Hòa Tấu',
-        imageLink: '/images/singerImages/Hòa Tấu.jpg'
+        imageLink: 'images/singerImages/Hòa Tấu.jpg'
     },
     {
         title: 'Acoustic',
-        imageLink: '/images/singerImages/Acoustic.jpg'
+        imageLink: 'images/singerImages/Acoustic.jpg'
     },
     {
         title: 'Hip-Hop',
-        imageLink: '/images/singerImages/Hip-Hop.jpg'
+        imageLink: 'images/singerImages/Hip-Hop.jpg'
     },
     {
         title: 'R&B',
-        imageLink: '/images/singerImages/R&B.jpg'
+        imageLink: 'images/singerImages/R&B.jpg'
     },
     {
         title: 'Latin',
-        imageLink: '/images/singerImages/Latin.jpg'
+        imageLink: 'images/singerImages/Latin.jpg'
     },
     {
         title: 'Indie',
-        imageLink: '/images/singerImages/Indie.jpg'
+        imageLink: 'images/singerImages/Indie.jpg'
     },
     {
         title: 'Country',
-        imageLink: '/images/singerImages/Country.jpg'
+        imageLink: 'images/singerImages/Country.jpg'
     },
     {
         title: 'Nhạc Dance',
-        imageLink: '/images/singerImages/Nhạc Dance.jpg'
+        imageLink: 'images/singerImages/Nhạc Dance.jpg'
     },
     {
         title: 'Rap Việt',
-        imageLink: '/images/singerImages/Rap Việt.jpg'
+        imageLink: 'images/singerImages/Rap Việt.jpg'
     },
     {
         title: 'Nhạc Thiếu Nhi',
-        imageLink: '/images/singerImages/Nhạc Thiếu Nhi.jpg'
+        imageLink: 'images/singerImages/Nhạc Thiếu Nhi.jpg'
     },
     {
         title: 'Nhạc Trịnh',
-        imageLink: '/images/singerImages/Nhạc Trịnh.jpg'
+        imageLink: 'images/singerImages/Nhạc Trịnh.jpg'
     },
     {
         title: 'Top DJs',
-        imageLink: '/images/singerImages/Top DJs.jpg'
+        imageLink: 'images/singerImages/Top DJs.jpg'
     }
 ]
 const ActionEmotion = [{
         title: 'Workout',
-        imageLink: '/images/singerImages/Workout.jpg'
+        imageLink: 'images/singerImages/Workout.jpg'
     },
     {
         title: 'Spa & Yoga',
-        imageLink: '/images/singerImages/Spa & Yoga.jpg'
+        imageLink: 'images/singerImages/Spa & Yoga.jpg'
     },
     {
         title: 'Tiệc Tùng',
-        imageLink: '/images/singerImages/Tiệc Tùng.jpg'
+        imageLink: 'images/singerImages/Tiệc Tùng.jpg'
     },
     {
         title: 'Chill',
-        imageLink: '/images/singerImages/Chill.jpg'
+        imageLink: 'images/singerImages/Chill.jpg'
     },
     {
         title: 'Khúc Nhạc Vui',
-        imageLink: '/images/singerImages/Khúc Nhạc Vui.jpg'
+        imageLink: 'images/singerImages/Khúc Nhạc Vui.jpg'
     }
 ]
 
