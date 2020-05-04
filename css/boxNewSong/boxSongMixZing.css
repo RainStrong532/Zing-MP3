@@ -14,6 +14,14 @@
     visibility: visible;
 }
 
+.box_new_song .order.active span:last-child {
+    visibility: visible;
+}
+
+.box_new_song .order.active span:first-child {
+    visibility: hidden;
+}
+
 .box_new_song:hover .order span:first-child {
     visibility: hidden;
 }

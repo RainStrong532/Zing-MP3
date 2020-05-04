@@ -12,7 +12,6 @@ listItems.forEach((item, index) => {
         dropDns.forEach((item) => {
             item.style.display = 'none'
         })
-        console.log(e.offsetX)
         dropDns[index].style.display = 'block'
         dropDns[index].style.left = e.offsetX + 20 + 'px'
         return false;

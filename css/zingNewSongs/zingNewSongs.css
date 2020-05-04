@@ -1,5 +1,6 @@
 .zing_new_songs {
     display: flex;
+    padding: 20px 0 10px 0;
 }
 
 .zing_new_songs .column {

@@ -1,5 +1,6 @@
 .all_chart_container {
     display: flex;
+    margin-top: 30px!important;
 }
 
 .chart_realtime_container {
