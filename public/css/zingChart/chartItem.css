@@ -1,0 +1,136 @@
+.chart_item {
+    list-style-type: none;
+    padding: 8px 10px 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart_item>div {
+    display: flex;
+    align-items: center;
+}
+
+.chart_item>div .number_order {
+    white-space: nowrap;
+    font-size: 1.25rem;
+    color: #fff;
+    font-weight: 400;
+    margin-right: 10px;
+    word-break: break-word;
+}
+
+.chart_item>div .image {
+    position: relative;
+    height: 50px;
+    width: 50px;
+    border-radius: 2px;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.chart_item>div .image img {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart_item>div .image .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.chart_item>div .image span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    cursor: pointer
+}
+
+.chart_item:hover {
+    background-color: rgba(255, 255, 255, .15);
+    border-color: transparent;
+    border-radius: 4px;
+}
+
+.chart_item:hover>div .image span {
+    color: #fcfcfc;
+}
+
+.chart_item>div .image.active span {
+    color: #fcfcfc;
+}
+
+.chart_item>div .image.active .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.chart_item:hover>div .image .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.chart_item>div .infor {
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.chart_item>div .infor a {
+    font-size: 0.75rem;
+    white-space: nowrap;
+    display: block;
+    color: #fcfcfc;
+}
+
+.chart_item>div .infor a:first-child {
+    font-weight: 700;
+    line-height: 1.36;
+    cursor: pointer;
+}
+
+.chart_item>div .infor a:last-child {
+    color: #A0A0A0;
+    font-weight: 400;
+    line-height: 1.33;
+    cursor: context-menu;
+}
+
+.chart_item .percent {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.chart_item>div .infor a:last-child:hover {
+    color: #6e55b4;
+}
+
+.chart_list .top:nth-child(1) .number_order,
+.chart_list .top:nth-child(1) .percent {
+    color: #4a90e2;
+}
+
+.chart_list .top:nth-child(2) .number_order,
+.chart_list .top:nth-child(2) .percent {
+    color: #50e3c3;
+}
+
+.chart_list .top:nth-child(3) .number_order,
+.chart_list .top:nth-child(3) .percent {
+    color: #e4340d;
+}
+
+.chart_item.active {
+    background-color: rgba(255, 255, 255, .15);
+    border-color: transparent;
+    border-radius: 4px;
+}

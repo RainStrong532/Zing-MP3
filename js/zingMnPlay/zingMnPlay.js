@@ -51,7 +51,7 @@ function changeMusic(item) {
         }
     }
     audio.setAttribute('src', item.link);
-    // audio.setAttribute('src', '..' + item.link);
+    // audio.setAttribute('src', '../' + item.link);
     audio.dataset.id = item.id;
     let nextItem = document.querySelectorAll('.play_pause_btn[data-id="' + audio.dataset.id + '"]');
     if (nextItem.length > 0) {
@@ -60,7 +60,7 @@ function changeMusic(item) {
             item.parentNode.classList.add('active');
         })
     }
-    // avatarSinger.setAttribute('src', '..' + item.imageLink);
+    // avatarSinger.setAttribute('src', '../' + item.imageLink);
     avatarSinger.setAttribute('src', item.imageLink);
     singer_name.innerHTML = '- ' + item.singers.join(',');
     song_name.innerHTML = item.song;

@@ -1,0 +1,24 @@
+.zing_new_songs {
+    display: flex;
+    padding: 20px 0 10px 0;
+}
+
+.zing_new_songs .column {
+    flex-grow: 1;
+    padding: 0 20px 0 9.5px;
+    flex-grow: 1;
+}
+
+.zing_new_songs .column .list {
+    list-style-type: none;
+}
+
+.zing_new_songs .column .list>li {
+    padding: 7px 10px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.zing_new_songs .column .list>li:hover {
+    background-color: #f7f7f7;
+}

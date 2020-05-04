@@ -1,0 +1,92 @@
+header.header .top_bar .user_profile .extention .dropdown_menu {
+    position: relative;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu {
+    position: absolute;
+    width: 215px;
+    top: 120%;
+    right: 0;
+    border-radius: 2px;
+    user-select: none;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .2);
+    margin-top: 5px;
+    background-color: #fcfcfc;
+    display: none;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu ul {
+    list-style-type: none;
+    padding: 10px 0;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu ul li {
+    padding: 0 12px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu ul li:hover {
+    background-color: #efefef;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu ul li:hover span:first-child {
+    background-color: #65509e;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu ul li:hover span:nth-child(2) {
+    color: #65509e;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu .vip_area_btn {
+    text-align: center;
+    padding: 12px 10px 15px;
+    border-top: 1px solid #dbdbdb;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu .vip_area_btn a {
+    text-decoration: none;
+    display: inline-block;
+    color: #32323d;
+    white-space: nowrap;
+    font-size: 0.75rem;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 4px;
+    background-color: #f8e71c;
+    font-size: 0.75rem;
+    line-height: 1.8;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_dropdown_menu .vip_area_btn a:hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .2), 0 6px 20px 0 rgba(0, 0, 0, .19);
+    background-color: #fcfcfc;
+    border-color: #fcfcfc;
+    color: #6e55b4;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_menu_list .mode {
+    display: inline-block;
+    margin: 12px;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_menu_list span:first-child {
+    background-color: #a0a0a0;
+    color: #fcfcfc;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    text-align: center;
+    line-height: 1.5rem;
+    transform: rotate(160deg);
+    font-size: 0.75rem;
+}
+
+header.header .top_bar .user_profile .extention .dropdown_menu .user_menu_list span:last-child {
+    position: relative;
+    left: 35%;
+    font-size: 2.2rem;
+    color: #a0a0a0;
+}
