@@ -3,7 +3,6 @@ const MrSiro = musicItems.filter(item => {
 }).slice(0, 10)
 
 function renderMixZingChoice(container, items) {
-    console.log(container);
     const image = '<div class="image card-170"><img src="' + items[9].imageLink + '" alt="image"><span class="material-icons">play_circle_outline</span></div>';
     const mix_intro = '<div class="mix_info"><div class="title">Những bài hát phải nghe của ' + items[0].singers[0] + '</div><div class="number_song">10 bài hát</div></div>'
     const intro = '<div class="intro">' + image + mix_intro + '</div>';

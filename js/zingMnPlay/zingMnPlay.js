@@ -212,3 +212,4 @@ function genarateId() {
     } while (id.indexOf(audio.dataset.id) !== -1)
     return id;
 }
+document.querySelector('.number_of_song').innerHTML = musicItems.length;
