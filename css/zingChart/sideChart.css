@@ -2,6 +2,8 @@
     width: calc(100% - 667px);
     position: relative;
     background-image: url(../../images/bg-chart.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
     z-index: 5;
 }
 
