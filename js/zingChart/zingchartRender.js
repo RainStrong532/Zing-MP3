@@ -45,6 +45,7 @@ window.addEventListener('resize', () => {
     distancePoints = (chartWidth - 40) / 24;
     renderChart(top_songs);
     points = document.querySelectorAll('.chart_container .top_musics .points');
+    renderRealtimeFooter();
 })
 
 function renderChart(top_songs) {

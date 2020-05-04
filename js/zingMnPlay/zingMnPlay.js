@@ -17,10 +17,7 @@ let start = false;
 
 play_st.forEach((item) => {
     item.addEventListener('click', (e) => {
-        let listItems = document.querySelectorAll('.play_pause_btn[data-id="' + e.target.dataset.id + '"]')
-        listItems.forEach(element => {
-            audioAction(element);
-        })
+        audioAction(e.target);
     })
 })
 main_btn.addEventListener('click', () => {
@@ -53,7 +50,8 @@ function changeMusic(item) {
             })
         }
     }
-    audio.setAttribute('src', '..' + item.link);
+    audio.setAttribute('src', item.link);
+    // audio.setAttribute('src', '..' + item.link);
     audio.dataset.id = item.id;
     let nextItem = document.querySelectorAll('.play_pause_btn[data-id="' + audio.dataset.id + '"]');
     if (nextItem.length > 0) {
@@ -62,7 +60,8 @@ function changeMusic(item) {
             item.parentNode.classList.add('active');
         })
     }
-    avatarSinger.setAttribute('src', '..' + item.imageLink);
+    // avatarSinger.setAttribute('src', '..' + item.imageLink);
+    avatarSinger.setAttribute('src', item.imageLink);
     singer_name.innerHTML = '- ' + item.singers.join(',');
     song_name.innerHTML = item.song;
     setTimeout(() => {
@@ -116,11 +115,14 @@ function convertTime(num) {
 function audioInit(e) {
     changeMusic(getMusic(e.dataset.id));
     audio.play();
-    if (e.innerHTML.indexOf(play_pause[0]) !== -1) {
-        e.innerHTML = play_pause[1];
-    } else {
-        e.innerHTML = play_pause[3]
-    }
+    let elements = document.querySelectorAll('.play_pause_btn[data-id="' + e.dataset.id + '"]');
+    elements.forEach(element => {
+        if (element.innerHTML.indexOf(play_pause[0]) !== -1) {
+            element.innerHTML = play_pause[1];
+        } else {
+            element.innerHTML = play_pause[3]
+        }
+    })
     main_btn.innerHTML = play_pause[1];
     audio.currentTime = 0;
     handle_pos = 0;
@@ -210,3 +212,4 @@ function genarateId() {
     } while (id.indexOf(audio.dataset.id) !== -1)
     return id;
 }
+document.querySelector('.number_of_song').innerHTML = musicItems.length;

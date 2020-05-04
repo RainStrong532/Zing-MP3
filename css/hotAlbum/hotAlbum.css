@@ -1,6 +1,7 @@
 .hot_slider_container {
     width: 100%;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 .hot_slider_container .slider_container {
@@ -44,9 +45,13 @@
     transform: scale(1.05);
 }
 
-.hot_slider_container .slider_container .slide:hover .image::before {
+.hot_slider_container .slider_container .slide .image.active .material-icons {
+    visibility: visible;
+}
+
+.hot_slider_container .slider_container .slide .image::before {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -56,13 +61,20 @@
     z-index: 1;
 }
 
+.hot_slider_container .slider_container .slide .image.active::before {
+    display: block;
+}
+
+.hot_slider_container .slider_container .slide:hover .image::before {
+    display: block;
+}
+
 .hot_slider_container .slider_container .slide:hover span {
     visibility: visible;
 }
 
 .hot_slider_container .slider_container .slide .card_info a {
     display: block;
-    white-space: nowrap;
     cursor: pointer;
 }
 

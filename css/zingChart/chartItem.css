@@ -42,6 +42,7 @@
     position: absolute;
     top: 0;
     left: 0;
+    cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -51,6 +52,7 @@
     top: 50%;
     transform: translate(-50%, -50%);
     color: transparent;
+    cursor: pointer
 }
 
 .chart_item:hover {
@@ -63,12 +65,15 @@
     color: #fcfcfc;
 }
 
+.chart_item>div .image.active span {
+    color: #fcfcfc;
+}
+
+.chart_item>div .image.active .overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
 .chart_item:hover>div .image .overlay {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
     background-color: rgba(0, 0, 0, 0.7);
 }
 

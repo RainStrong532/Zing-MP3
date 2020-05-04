@@ -104,3 +104,9 @@
 .mix_zing_choice .mix_list .list>li:hover {
     background-color: #f7f7f7;
 }
+
+.title_mix_zing_choice {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 30px 0 10px 0;
+}

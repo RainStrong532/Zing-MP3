@@ -5,7 +5,7 @@
 .container .header_slider {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 10px;
+    margin: 20px 0 10px;
     align-items: center;
 }
 
@@ -90,9 +90,9 @@
     overflow: hidden;
 }
 
-.container .slider_new_release_container .slider_container .album_slide .slide .image:hover::before {
+.container .slider_new_release_container .slider_container .album_slide .slide .image::before {
     content: '';
-    display: block;
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -102,11 +102,24 @@
     z-index: 1;
 }
 
+.container .slider_new_release_container .slider_container .album_slide .slide .image:hover::before {
+    display: block;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image.active::before {
+    display: block;
+}
+
 .container .slider_new_release_container .slider_container .album_slide .slide .image:hover img {
     transform: scale(1.05);
 }
 
 .container .slider_new_release_container .slider_container .album_slide .slide .image:hover span {
+    visibility: visible;
+    z-index: 2;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image.active span {
     visibility: visible;
     z-index: 2;
 }
@@ -157,6 +170,7 @@
 }
 
 .container .slider_new_release_container .slider_container .album_slide .slide .card_info .info .song_name {
+    text-align: left;
     font-size: 16px;
     font-weight: 700;
     line-height: 1.38;
