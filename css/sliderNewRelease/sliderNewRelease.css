@@ -1,0 +1,218 @@
+.container_pt20 {
+    padding-top: 20px;
+}
+
+.container .header_slider {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 10px;
+    align-items: center;
+}
+
+.container .header_slider .title {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: capitalize;
+    display: block;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.container .header_slider .title:hover {
+    color: #6e55b4;
+}
+
+.container .header_slider .title:hover span {
+    color: #6e55b4;
+}
+
+.container .header_slider .btn_controls {
+    display: flex;
+    align-items: center;
+}
+
+.container .header_slider a {
+    cursor: pointer;
+    display: inline-block;
+}
+
+.container .header_slider a span {
+    color: #ddd;
+}
+
+.container .header_slider a span.active {
+    color: #32323d;
+}
+
+.container .header_slider a:hover span {
+    color: #6e55b4;
+}
+
+.container .slider_new_release_container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container .slider_new_release_container .slider_container {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.container .slider_new_release_container .album_slide {
+    display: flex;
+    width: 25%;
+    justify-content: space-between;
+}
+
+.container .slider_new_release_container .album_slide .slide {
+    flex-grow: 1;
+    width: 33.33%;
+    margin: 0 9.5px;
+}
+
+.container .slider_new_release_container .album_slide .slide .watch_all {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    color: #6e55b4;
+    cursor: pointer;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image::before {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image:hover::before {
+    display: block;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image.active::before {
+    display: block;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image:hover img {
+    transform: scale(1.05);
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image:hover span {
+    visibility: visible;
+    z-index: 2;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image.active span {
+    visibility: visible;
+    z-index: 2;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image img {
+    width: 100%;
+    transition: all 0.7s;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .image span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 60px;
+    display: inline-block;
+    cursor: pointer;
+    line-height: 66%;
+    visibility: hidden;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    line-height: 0;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 0 0 20px 0 rgba(190, 190, 206, .15);
+    border-radius: 5px;
+    height: 100%;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin: 0 0 0 10px;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: pointer;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info .song_name {
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.38;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info .singer {
+    font-size: 12px;
+    line-height: 1.36;
+    color: inherit;
+    font-weight: 400;
+    display: inline-block;
+    color: #a0a0a0;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .info .singer:hover {
+    color: #6e55b4;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .order {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    cursor: pointer;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .order .order_number {
+    -webkit-text-stroke: 2px rgba(102, 69, 193, .4);
+    font-size: 50px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0;
+    color: transparent;
+    word-break: break-word;
+    position: relative;
+    bottom: -12px;
+    white-space: nowrap;
+}
+
+.container .slider_new_release_container .slider_container .album_slide .slide .card_info .order .date {
+    color: #dbdbdb;
+    font-size: 12px;
+    height: 16px;
+    line-height: 16px;
+}
