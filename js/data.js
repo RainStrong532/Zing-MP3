@@ -235,7 +235,7 @@ const musicItems = [{
         song: 'Tâm Ma',
         singers: ['BlackBi'],
         link: 'musics/30 - Tâm Ma - BlackBi ft Võ Đình Hiếu ft Elb - MV Lyrics.mp3',
-        imageLink: 'images/singerImages/BlackBi.jpg',
+        imageLink: 'images/singerImages/Blackbi.jpg',
         type: 'Việt Nam',
     },
     {
@@ -267,7 +267,7 @@ const musicItems = [{
         song: '24H',
         singers: ['LyLy'],
         link: 'musics/34 - 24H - LyLy ft. Magazine.mp3',
-        imageLink: 'images/singerImages/LyLy.jpg',
+        imageLink: 'images/singerImages/Lyly.jpg',
         type: 'Việt Nam',
     },
     {
@@ -475,7 +475,7 @@ const musicItems = [{
         song: 'Trăm năm không quên',
         singers: ['Quang Hà'],
         link: 'musics/59 - TRĂM NĂM KHÔNG QUÊN - QUANG HÀ.mp3',
-        imageLink: 'images/singerImages/Quang Hà.jpg',
+        imageLink: 'images/singerImages/Quang hà.jpg',
         image: 'images/singerImages/Quang Hà hz.jpg',
         type: 'Việt Nam',
     },
@@ -756,7 +756,7 @@ const musicItems = [{
         song: 'Way Back Home',
         singers: ['SHAUN'],
         link: 'musics/92 - Way Back Home - SHAUN (ft.Conor Maynard).mp3',
-        imageLink: 'images/singerImages/SHAUN.jpg',
+        imageLink: 'images/singerImages/Shaun.jpg',
         type: 'Korean',
     },
     {
